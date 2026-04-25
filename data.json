@@ -1,0 +1,8441 @@
+{
+  "individuals": {
+    "70349824": {
+      "id": "70349824",
+      "givn": "Татьяна",
+      "surn": "Мангул",
+      "secg": "Васильевна",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "Кривая Балка, Саратовский район",
+      "objes": [
+        "54203864",
+        "29851669",
+        "59106182"
+      ],
+      "fams": [
+        "9534490"
+      ],
+      "famc": [],
+      "notes": [
+        "18810380"
+      ],
+      "photoIds": [
+        "54203864",
+        "29851669",
+        "59106182"
+      ]
+    },
+    "35154288": {
+      "id": "35154288",
+      "givn": "Дарья",
+      "surn": "Урсаки",
+      "secg": "Степановна",
+      "sex": "F",
+      "birthDate": "1909",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "81695488",
+        "51840208"
+      ],
+      "fams": [
+        "96155866",
+        "51709192"
+      ],
+      "famc": [
+        "7302831"
+      ],
+      "notes": [],
+      "photoIds": [
+        "81695488",
+        "51840208"
+      ]
+    },
+    "43938060": {
+      "id": "43938060",
+      "givn": "Армен",
+      "surn": "Шахназарян",
+      "secg": "Авинерович",
+      "sex": "M",
+      "birthDate": "26.08.1981",
+      "birthPlace": "Шамхор, , , Азербайджан",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "76216060"
+      ],
+      "fams": [
+        "24710275",
+        "76273960"
+      ],
+      "famc": [
+        "53829009"
+      ],
+      "notes": [],
+      "photoIds": [
+        "76216060"
+      ]
+    },
+    "24177165": {
+      "id": "24177165",
+      "givn": "Ольга",
+      "surn": "Быконов",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "29192042"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "3588684": {
+      "id": "3588684",
+      "givn": "Инна",
+      "surn": "Мангул",
+      "secg": "Николаевна",
+      "sex": "F",
+      "birthDate": "1968",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "25974980"
+      ],
+      "famc": [
+        "9534490"
+      ],
+      "notes": [
+        "77341578"
+      ],
+      "photoIds": []
+    },
+    "32035536": {
+      "id": "32035536",
+      "givn": "София",
+      "surn": "Шахназарян",
+      "secg": "Георгиевна",
+      "sex": "F",
+      "birthDate": "14.04.2004",
+      "birthPlace": "Москва, Россия",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "88842920"
+      ],
+      "fams": [],
+      "famc": [
+        "40477028"
+      ],
+      "notes": [],
+      "photoIds": [
+        "88842920"
+      ]
+    },
+    "62889966": {
+      "id": "62889966",
+      "givn": "Александр",
+      "surn": "Акуличев",
+      "secg": "Георгиевич",
+      "sex": "M",
+      "birthDate": "13.06.2004",
+      "birthPlace": "Москва, Россия",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "58503656"
+      ],
+      "fams": [
+        "51725101"
+      ],
+      "famc": [
+        "23556786"
+      ],
+      "notes": [],
+      "photoIds": [
+        "58503656"
+      ]
+    },
+    "89317365": {
+      "id": "89317365",
+      "givn": "Мария",
+      "surn": "Медведева",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "41509918"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "37845118": {
+      "id": "37845118",
+      "givn": "Офелия",
+      "surn": "Данилян",
+      "secg": "Вартановна",
+      "sex": "F",
+      "birthDate": "08.03.1927",
+      "birthPlace": "",
+      "deathDate": "27.12.2016",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "49068840",
+        "96170792"
+      ],
+      "fams": [
+        "38341840"
+      ],
+      "famc": [
+        "86511473"
+      ],
+      "notes": [],
+      "photoIds": [
+        "49068840",
+        "96170792"
+      ],
+      "documents": [
+        {
+          "file": "ofelia_death_cert.jpg",
+          "title": "Свидетельство о смерти"
+        }
+      ]
+    },
+    "31125007": {
+      "id": "31125007",
+      "givn": "Вячеслав",
+      "surn": "Потапов",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "84697980"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "78092024": {
+      "id": "78092024",
+      "givn": "Нина",
+      "surn": "Романенко",
+      "secg": "Ивановна",
+      "sex": "F",
+      "birthDate": "11.04.1936",
+      "birthPlace": "Старая Царичанка, , , Украина",
+      "deathDate": "22.07.2019",
+      "deathPlace": "",
+      "occupation": "доярка на ферме",
+      "residence": "",
+      "objes": [
+        "89653495",
+        "1522308"
+      ],
+      "fams": [
+        "58836476"
+      ],
+      "famc": [
+        "96155866"
+      ],
+      "notes": [],
+      "photoIds": [
+        "89653495",
+        "1522308"
+      ]
+    },
+    "42972468": {
+      "id": "42972468",
+      "givn": "Авинер",
+      "surn": "Шахназарян",
+      "secg": "Григорьевич",
+      "sex": "M",
+      "birthDate": "23.11.1953",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "53829009"
+      ],
+      "famc": [
+        "38341840"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "41058944": {
+      "id": "41058944",
+      "givn": "Вартан",
+      "surn": "Даниелян",
+      "secg": "Мартиросович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "8895756",
+        "86511473"
+      ],
+      "famc": [],
+      "notes": [
+        "59980912"
+      ],
+      "photoIds": []
+    },
+    "96771916": {
+      "id": "96771916",
+      "givn": "Александр",
+      "surn": "Быконов",
+      "secg": "Иванович",
+      "sex": "M",
+      "birthDate": "1950",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "41419085",
+        "57342572"
+      ],
+      "fams": [
+        "29192042"
+      ],
+      "famc": [
+        "51709192"
+      ],
+      "notes": [
+        "35820225"
+      ],
+      "photoIds": [
+        "41419085",
+        "57342572"
+      ]
+    },
+    "23582576": {
+      "id": "23582576",
+      "givn": "Давид",
+      "surn": "Шахназарян",
+      "secg": "Георгиевич",
+      "sex": "M",
+      "birthDate": "18.06.2005",
+      "birthPlace": "Москва, Россия",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "90269648"
+      ],
+      "fams": [],
+      "famc": [
+        "40477028"
+      ],
+      "notes": [],
+      "photoIds": [
+        "90269648"
+      ]
+    },
+    "59255482": {
+      "id": "59255482",
+      "givn": "Варвара",
+      "surn": "Шахназарян",
+      "secg": "Меликовна",
+      "sex": "F",
+      "birthDate": "1904",
+      "birthPlace": "",
+      "deathDate": "1984",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [],
+      "notes": [
+        "84732072"
+      ],
+      "photoIds": []
+    },
+    "53876568": {
+      "id": "53876568",
+      "givn": "Иван",
+      "surn": "Романенко",
+      "secg": "Иванович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "96155866"
+      ],
+      "famc": [
+        "86009712"
+      ],
+      "notes": [
+        "47242623"
+      ],
+      "photoIds": []
+    },
+    "71843748": {
+      "id": "71843748",
+      "givn": "Архип",
+      "surn": "Мангул",
+      "secg": "Петрович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "Председатель колхоза",
+      "residence": "",
+      "objes": [
+        "50726176",
+        "40249764",
+        "91694612",
+        "33706636"
+      ],
+      "fams": [
+        "1220336"
+      ],
+      "famc": [],
+      "notes": [
+        "91290984"
+      ],
+      "photoIds": [
+        "50726176",
+        "40249764",
+        "91694612",
+        "33706636"
+      ]
+    },
+    "19457188": {
+      "id": "19457188",
+      "givn": "Даниель",
+      "surn": "Шахназарян",
+      "secg": "Георгиевич",
+      "sex": "M",
+      "birthDate": "15.04.2008",
+      "birthPlace": "Москва, Россия",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "71550850"
+      ],
+      "fams": [],
+      "famc": [
+        "40477028"
+      ],
+      "notes": [],
+      "photoIds": [
+        "71550850"
+      ]
+    },
+    "20621596": {
+      "id": "20621596",
+      "givn": "Нарина",
+      "surn": "Шахназарян",
+      "secg": "Авинеровна",
+      "sex": "F",
+      "birthDate": "15.08.1976",
+      "birthPlace": "Киравобад",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "875040"
+      ],
+      "fams": [
+        "23556786"
+      ],
+      "famc": [
+        "53829009"
+      ],
+      "notes": [],
+      "photoIds": [
+        "875040"
+      ]
+    },
+    "33268808": {
+      "id": "33268808",
+      "givn": "Мария",
+      "surn": "Шахназарян",
+      "secg": "Георгиевна",
+      "sex": "F",
+      "birthDate": "05.04.2010",
+      "birthPlace": "Москва, Россия",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "28879862"
+      ],
+      "fams": [],
+      "famc": [
+        "40477028"
+      ],
+      "notes": [],
+      "photoIds": [
+        "28879862"
+      ]
+    },
+    "82021480": {
+      "id": "82021480",
+      "givn": "Николай",
+      "surn": "Мангул",
+      "secg": "Архипович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "Кривая Балка, Саратовский район",
+      "objes": [
+        "96219024",
+        "32337568"
+      ],
+      "fams": [
+        "9534490"
+      ],
+      "famc": [
+        "1220336"
+      ],
+      "notes": [],
+      "photoIds": [
+        "96219024",
+        "32337568"
+      ]
+    },
+    "7323016": {
+      "id": "7323016",
+      "givn": "Светлана",
+      "surn": "Мангул",
+      "secg": "Васильевна",
+      "sex": "F",
+      "birthDate": "26.06.1965",
+      "birthPlace": "Новая Царичанка, , , Украина",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "49579156",
+        "88855492",
+        "70214548"
+      ],
+      "fams": [
+        "23923904"
+      ],
+      "famc": [
+        "58836476"
+      ],
+      "notes": [],
+      "photoIds": [
+        "49579156",
+        "88855492",
+        "70214548"
+      ]
+    },
+    "27422228": {
+      "id": "27422228",
+      "givn": "Лариса",
+      "surn": "Романенко",
+      "secg": "Ивановна",
+      "sex": "F",
+      "birthDate": "21.03.1938",
+      "birthPlace": "",
+      "deathDate": "02.01.2021",
+      "deathPlace": "",
+      "occupation": "массажист",
+      "residence": "",
+      "objes": [
+        "20376648"
+      ],
+      "fams": [
+        "84697980"
+      ],
+      "famc": [
+        "96155866"
+      ],
+      "notes": [],
+      "photoIds": [
+        "20376648"
+      ]
+    },
+    "18313492": {
+      "id": "18313492",
+      "givn": "Вероника",
+      "surn": "Ковальчук",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "58260844"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "99433482": {
+      "id": "99433482",
+      "givn": "Анна",
+      "surn": "Быконов",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "29192042"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "27163974": {
+      "id": "27163974",
+      "givn": "Иван",
+      "surn": "Быконов",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "95977022"
+      ],
+      "fams": [
+        "51709192"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": [
+        "95977022"
+      ]
+    },
+    "47907400": {
+      "id": "47907400",
+      "givn": "Давид",
+      "surn": "Шахназарян",
+      "secg": "Арменович",
+      "sex": "M",
+      "birthDate": "30.01.2019",
+      "birthPlace": "Москва, , , Россия",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "2818726"
+      ],
+      "fams": [],
+      "famc": [
+        "76273960"
+      ],
+      "notes": [],
+      "photoIds": [
+        "2818726"
+      ]
+    },
+    "85475360": {
+      "id": "85475360",
+      "givn": "Григорий",
+      "surn": "Шахназарян",
+      "secg": "Авинерович",
+      "sex": "M",
+      "birthDate": "03.02.1978",
+      "birthPlace": "Шамхор",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "85941036"
+      ],
+      "fams": [
+        "40477028"
+      ],
+      "famc": [
+        "53829009"
+      ],
+      "notes": [],
+      "photoIds": [
+        "85941036"
+      ]
+    },
+    "71548844": {
+      "id": "71548844",
+      "givn": "Александр",
+      "surn": "Снетков",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "13313343"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "6951644": {
+      "id": "6951644",
+      "givn": "Валерий",
+      "surn": "Курудимов",
+      "secg": "Константинович",
+      "sex": "M",
+      "birthDate": "18.03.1967",
+      "birthPlace": "Чадыр-Лунга, , , Молдова",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "обмотчик на ЗЭТО, потом занимается ремонтом техники на дому",
+      "residence": "",
+      "objes": [
+        "85458321",
+        "57967663"
+      ],
+      "fams": [],
+      "famc": [
+        "82987979"
+      ],
+      "notes": [
+        "95527070"
+      ],
+      "photoIds": [
+        "85458321",
+        "57967663"
+      ]
+    },
+    "4234354": {
+      "id": "4234354",
+      "givn": "Татьяна",
+      "surn": "Ласковская (Мангул)",
+      "secg": "Архиповна",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "учитель математик",
+      "residence": "",
+      "objes": [
+        "91185675"
+      ],
+      "fams": [
+        "25048684"
+      ],
+      "famc": [
+        "1220336"
+      ],
+      "notes": [
+        "97993748"
+      ],
+      "photoIds": [
+        "91185675"
+      ]
+    },
+    "59565798": {
+      "id": "59565798",
+      "givn": "Маргарита",
+      "surn": "Акуличева",
+      "secg": "Георгиевна",
+      "sex": "F",
+      "birthDate": "11.08.2007",
+      "birthPlace": "Москва, Россия",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "35769176"
+      ],
+      "fams": [],
+      "famc": [
+        "23556786"
+      ],
+      "notes": [],
+      "photoIds": [
+        "35769176"
+      ]
+    },
+    "35454522": {
+      "id": "35454522",
+      "givn": "Алена",
+      "surn": "Мангул",
+      "secg": "Игоревна",
+      "sex": "F",
+      "birthDate": "20.05.1988",
+      "birthPlace": "Кишинев, , , Молдова",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "90772878"
+      ],
+      "fams": [
+        "76273960"
+      ],
+      "famc": [
+        "23923904"
+      ],
+      "notes": [],
+      "photoIds": [
+        "90772878"
+      ]
+    },
+    "41852226": {
+      "id": "41852226",
+      "givn": "Ирина",
+      "surn": "Гавриленко",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "46423144"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "73540384": {
+      "id": "73540384",
+      "givn": "Артем",
+      "surn": "Шахназарян",
+      "secg": "Арменович",
+      "sex": "M",
+      "birthDate": "29.04.2020",
+      "birthPlace": "Москва, , , Россия",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "19037545"
+      ],
+      "fams": [],
+      "famc": [
+        "76273960"
+      ],
+      "notes": [],
+      "photoIds": [
+        "19037545"
+      ]
+    },
+    "56142782": {
+      "id": "56142782",
+      "givn": "Алена",
+      "surn": "Мангул",
+      "secg": "Николаевна",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "46423144"
+      ],
+      "famc": [
+        "9534490"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "72367536": {
+      "id": "72367536",
+      "givn": "Константин",
+      "surn": "Курудимов",
+      "secg": "Дмитриевич",
+      "sex": "M",
+      "birthDate": "19.02.1940",
+      "birthPlace": "Чадыр-Лунга, , , Молдова",
+      "deathDate": "17.02.2013",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "49618392",
+        "43709769",
+        "486266"
+      ],
+      "fams": [
+        "82987979"
+      ],
+      "famc": [
+        "91104529"
+      ],
+      "notes": [],
+      "photoIds": [
+        "49618392",
+        "43709769",
+        "486266"
+      ]
+    },
+    "84381481": {
+      "id": "84381481",
+      "givn": "Людмила",
+      "surn": "Азарян",
+      "secg": "Шамировна",
+      "sex": "F",
+      "birthDate": "07.05.1956",
+      "birthPlace": "Киравобад",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "учитель музыки",
+      "residence": "Москва, Россия",
+      "objes": [
+        "47404716",
+        "5381075",
+        "51954122"
+      ],
+      "fams": [
+        "53829009"
+      ],
+      "famc": [
+        "15457142"
+      ],
+      "notes": [
+        "96032388"
+      ],
+      "photoIds": [
+        "47404716",
+        "5381075",
+        "51954122"
+      ]
+    },
+    "34925832": {
+      "id": "34925832",
+      "givn": "Нелли",
+      "surn": "Крот",
+      "secg": "Пантелеевна",
+      "sex": "F",
+      "birthDate": "30.05.1942",
+      "birthPlace": "Арбузинка, , Николаевская, Украина",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "Чадыр-Лунга, республика Молдова",
+      "objes": [
+        "42901243",
+        "11904392",
+        "33782976",
+        "10004714"
+      ],
+      "fams": [
+        "82987979"
+      ],
+      "famc": [
+        "65858219"
+      ],
+      "notes": [],
+      "photoIds": [
+        "42901243",
+        "11904392",
+        "33782976",
+        "10004714"
+      ]
+    },
+    "95459514": {
+      "id": "95459514",
+      "givn": "Полина",
+      "surn": "Ковальчук",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "58260844"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "73250467": {
+      "id": "73250467",
+      "givn": "Игорь",
+      "surn": "Строенко",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "25974980"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "35664204": {
+      "id": "35664204",
+      "givn": "Василий",
+      "surn": "Мангул",
+      "secg": "Николаевичне",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "9534490"
+      ],
+      "notes": [
+        "7921329"
+      ],
+      "photoIds": []
+    },
+    "10844493": {
+      "id": "10844493",
+      "givn": "Алина",
+      "surn": "Строенко",
+      "secg": "Сергеевна",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "58260844"
+      ],
+      "famc": [
+        "25974980"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "20547520": {
+      "id": "20547520",
+      "givn": "Адам",
+      "surn": "Шахназарян",
+      "secg": "Георгиевич",
+      "sex": "M",
+      "birthDate": "20.01.2007",
+      "birthPlace": "Москва, Россия",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "15883326"
+      ],
+      "fams": [],
+      "famc": [
+        "40477028"
+      ],
+      "notes": [],
+      "photoIds": [
+        "15883326"
+      ]
+    },
+    "53511020": {
+      "id": "53511020",
+      "givn": "Сергей",
+      "surn": "Строенко",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "25974980"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "95770260": {
+      "id": "95770260",
+      "givn": "Анна",
+      "surn": "Шахназарян",
+      "secg": "Сергеевна",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "24710275"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "58119036": {
+      "id": "58119036",
+      "givn": "Юлия",
+      "surn": "Мангул",
+      "secg": "Игоревна",
+      "sex": "F",
+      "birthDate": "29.04.1991",
+      "birthPlace": "Кишинев, , , Молдова",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "38019974"
+      ],
+      "fams": [
+        "13313343"
+      ],
+      "famc": [
+        "23923904"
+      ],
+      "notes": [],
+      "photoIds": [
+        "38019974"
+      ]
+    },
+    "31359092": {
+      "id": "31359092",
+      "givn": "Амир",
+      "surn": "Шахназарян",
+      "secg": "Георгиевич",
+      "sex": "M",
+      "birthDate": "21.05.2018",
+      "birthPlace": "Москва, Россия",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "48016992"
+      ],
+      "fams": [],
+      "famc": [
+        "40477028"
+      ],
+      "notes": [],
+      "photoIds": [
+        "48016992"
+      ]
+    },
+    "78877471": {
+      "id": "78877471",
+      "givn": "Василий",
+      "surn": "Мангул",
+      "secg": "Архипович",
+      "sex": "M",
+      "birthDate": "27.02.1939",
+      "birthPlace": "Старая Царичанка, , , Украина",
+      "deathDate": "25.05.2000",
+      "deathPlace": "",
+      "occupation": "комбайнер",
+      "residence": "",
+      "objes": [
+        "27868625",
+        "42700768"
+      ],
+      "fams": [
+        "58836476"
+      ],
+      "famc": [
+        "1220336"
+      ],
+      "notes": [],
+      "photoIds": [
+        "27868625",
+        "42700768"
+      ]
+    },
+    "90399094": {
+      "id": "90399094",
+      "givn": "Марк",
+      "surn": "Шахназарян",
+      "secg": "Арменович",
+      "sex": "M",
+      "birthDate": "05.06.2014",
+      "birthPlace": "Москва, Россия",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "89804978"
+      ],
+      "fams": [],
+      "famc": [
+        "24710275"
+      ],
+      "notes": [],
+      "photoIds": [
+        "89804978"
+      ]
+    },
+    "20148352": {
+      "id": "20148352",
+      "givn": "Виолетта",
+      "surn": "Шахназарян",
+      "secg": "Арменовна",
+      "sex": "F",
+      "birthDate": "07.11.2005",
+      "birthPlace": "Москва",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "41042268"
+      ],
+      "fams": [],
+      "famc": [
+        "24710275"
+      ],
+      "notes": [],
+      "photoIds": [
+        "41042268"
+      ]
+    },
+    "94250166": {
+      "id": "94250166",
+      "givn": "Игорь",
+      "surn": "Курудимов",
+      "secg": "Константинович",
+      "sex": "M",
+      "birthDate": "18.09.1965",
+      "birthPlace": "Чадыр-Лунга, , , Молдова",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "заточник на ЗЭТО",
+      "residence": "Чадыр-Лунга, республика Молдова",
+      "objes": [
+        "85482840"
+      ],
+      "fams": [
+        "23923904"
+      ],
+      "famc": [
+        "82987979"
+      ],
+      "notes": [
+        "7133042"
+      ],
+      "photoIds": [
+        "85482840"
+      ]
+    },
+    "13795668": {
+      "id": "13795668",
+      "givn": "Виктория",
+      "surn": "Ковальчук",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "58260844"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "22410180": {
+      "id": "22410180",
+      "givn": "Наталья",
+      "surn": "Липатова",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "41509918"
+      ],
+      "famc": [
+        "84697980"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "13356830": {
+      "id": "13356830",
+      "givn": "Григорий",
+      "surn": "Шахназарян",
+      "secg": "Оганесович",
+      "sex": "M",
+      "birthDate": "23.02.1929",
+      "birthPlace": "",
+      "deathDate": "16.06.2024",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "50978332"
+      ],
+      "fams": [
+        "38341840"
+      ],
+      "famc": [
+        "57003717",
+        "42156774"
+      ],
+      "notes": [],
+      "photoIds": [
+        "50978332"
+      ],
+      "documents": [
+        {
+          "file": "grigory_birth_cert_cover.jpg",
+          "title": "Свидетельство о рождении (обложка)"
+        },
+        {
+          "file": "grigory_birth_cert_inside.jpg",
+          "title": "Свидетельство о рождении"
+        },
+        {
+          "file": "grigory_old_id.jpg",
+          "title": "Удостоверение (СССР)"
+        },
+        {
+          "file": "grigory_veteran_cert.jpg",
+          "title": "Удостоверение ветерана"
+        },
+        {
+          "file": "grigory_veteran_id.jpg",
+          "title": "Удостоверение ветерана (новое)"
+        },
+        {
+          "file": "grigory_pension.jpg",
+          "title": "Пенсионное удостоверение"
+        },
+        {
+          "file": "grigory_drivers_license.jpg",
+          "title": "Водительское удостоверение"
+        },
+        {
+          "file": "grigory_passport.jpg",
+          "title": "Паспорт РФ"
+        },
+        {
+          "file": "grigory_passport_reg.jpg",
+          "title": "Паспорт РФ (регистрация)"
+        },
+        {
+          "file": "grigory_foreign_passport.jpg",
+          "title": "Загранпаспорт"
+        },
+        {
+          "file": "grigory_mse_1.jpg",
+          "title": "Справка МСЭ (стр. 1)"
+        },
+        {
+          "file": "grigory_mse_2.jpg",
+          "title": "Справка МСЭ (стр. 2)"
+        },
+        {
+          "file": "grigory_death_cert.jpg",
+          "title": "Свидетельство о смерти"
+        }
+      ]
+    },
+    "62071843": {
+      "id": "62071843",
+      "givn": "Иосиф",
+      "surn": "",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "25048684"
+      ],
+      "famc": [],
+      "notes": [
+        "15951570"
+      ],
+      "photoIds": []
+    },
+    "14799503": {
+      "id": "14799503",
+      "givn": "Римма",
+      "surn": "Шахназарян",
+      "secg": "Оганесовна",
+      "sex": "F",
+      "birthDate": "14.11.1946",
+      "birthPlace": "Чардахлы (?)",
+      "deathDate": "12.04.2003",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "53377002",
+        "14038532"
+      ],
+      "fams": [
+        "34803863"
+      ],
+      "famc": [
+        "57003717"
+      ],
+      "notes": [],
+      "photoIds": [
+        "53377002",
+        "14038532"
+      ]
+    },
+    "80270776": {
+      "id": "80270776",
+      "givn": "Аветис",
+      "surn": "Оганесов",
+      "secg": "Петросович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "в совхозе",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "76254475"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "95553766": {
+      "id": "95553766",
+      "givn": "Геннадий",
+      "surn": "Самсонов",
+      "secg": "Викторович",
+      "sex": "M",
+      "birthDate": "15.12",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "83476496"
+      ],
+      "fams": [],
+      "famc": [
+        "67805611"
+      ],
+      "notes": [],
+      "photoIds": [
+        "83476496"
+      ]
+    },
+    "86010266": {
+      "id": "86010266",
+      "givn": "Минура",
+      "surn": "Шахназарян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "Чардахлы",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "16933348"
+      ],
+      "fams": [
+        "4313512"
+      ],
+      "famc": [
+        "4194316"
+      ],
+      "notes": [
+        "20824784"
+      ],
+      "photoIds": [
+        "16933348"
+      ]
+    },
+    "39165827": {
+      "id": "39165827",
+      "givn": "Донара",
+      "surn": "Даниелян",
+      "secg": "Сумбатовна",
+      "sex": "F",
+      "birthDate": "01.07.1961",
+      "birthPlace": "Киравобад",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "26500761"
+      ],
+      "fams": [
+        "52497152"
+      ],
+      "famc": [
+        "28538568"
+      ],
+      "notes": [],
+      "photoIds": [
+        "26500761"
+      ]
+    },
+    "69761500": {
+      "id": "69761500",
+      "givn": "Магда",
+      "surn": "Хачатурян",
+      "secg": "Михайловна",
+      "sex": "F",
+      "birthDate": "1963(?)",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "преподаватель",
+      "residence": "",
+      "objes": [
+        "1421860",
+        "71631136"
+      ],
+      "fams": [
+        "21018678"
+      ],
+      "famc": [
+        "9559046"
+      ],
+      "notes": [
+        "76360853"
+      ],
+      "photoIds": [
+        "1421860",
+        "71631136"
+      ]
+    },
+    "37983399": {
+      "id": "37983399",
+      "givn": "Вагиф",
+      "surn": "Алекперов",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "23.11.1959",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "водитель автобуса",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "15790966"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "7221376": {
+      "id": "7221376",
+      "givn": "Артур",
+      "surn": "Хачатурян",
+      "secg": "Михайлович",
+      "sex": "M",
+      "birthDate": "1961(?)",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "милиционер",
+      "residence": "",
+      "objes": [
+        "31733040",
+        "42966296"
+      ],
+      "fams": [
+        "5748130"
+      ],
+      "famc": [
+        "9559046"
+      ],
+      "notes": [],
+      "photoIds": [
+        "31733040",
+        "42966296"
+      ]
+    },
+    "2512327": {
+      "id": "2512327",
+      "givn": "Мелик",
+      "surn": "Шахназарян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "директор (?) гидро электростанции",
+      "residence": "",
+      "objes": [
+        "28211379"
+      ],
+      "fams": [
+        "64297752",
+        "77561240"
+      ],
+      "famc": [
+        "44113198"
+      ],
+      "notes": [],
+      "photoIds": [
+        "28211379"
+      ]
+    },
+    "29415049": {
+      "id": "29415049",
+      "givn": "Нора",
+      "surn": "Хачатурян (Данилян)",
+      "secg": "Вартановна",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "7778774"
+      ],
+      "fams": [
+        "9559046"
+      ],
+      "famc": [
+        "86511473"
+      ],
+      "notes": [],
+      "photoIds": [
+        "7778774"
+      ]
+    },
+    "90537124": {
+      "id": "90537124",
+      "givn": "Люся",
+      "surn": "Самсонова",
+      "secg": "Оганесовна",
+      "sex": "F",
+      "birthDate": "20.03",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "43650617"
+      ],
+      "fams": [
+        "67805611"
+      ],
+      "famc": [
+        "57003717"
+      ],
+      "notes": [],
+      "photoIds": [
+        "43650617"
+      ]
+    },
+    "32293160": {
+      "id": "32293160",
+      "givn": "Иван",
+      "surn": "Акопян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "17993864"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "59111906": {
+      "id": "59111906",
+      "givn": "Эдуард",
+      "surn": "Григорян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "42441152"
+      ],
+      "famc": [
+        "27851841"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "15597008": {
+      "id": "15597008",
+      "givn": "Зина",
+      "surn": "",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "44844014"
+      ],
+      "fams": [
+        "57375686"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": [
+        "44844014"
+      ]
+    },
+    "18555833": {
+      "id": "18555833",
+      "givn": "Нелли",
+      "surn": "Хачатурян",
+      "secg": "Михайловна",
+      "sex": "F",
+      "birthDate": "1958",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "педагог англ языка",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "9559046"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "92196944": {
+      "id": "92196944",
+      "givn": "Саят",
+      "surn": "Пнджоян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "строитель",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "35065972"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "16895184": {
+      "id": "16895184",
+      "givn": "Людмила",
+      "surn": "Крот",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "1959",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "36616444"
+      ],
+      "fams": [],
+      "famc": [
+        "59000509"
+      ],
+      "notes": [],
+      "photoIds": [
+        "36616444"
+      ]
+    },
+    "14170614": {
+      "id": "14170614",
+      "givn": "Роза",
+      "surn": "Оганесов",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "09.09.1978",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "50490888"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "5775098": {
+      "id": "5775098",
+      "givn": "Владимир",
+      "surn": "Оганесов",
+      "secg": "Мамиконович",
+      "sex": "M",
+      "birthDate": "12.12.1941",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "Карбюраторщик",
+      "residence": "",
+      "objes": [
+        "10570784"
+      ],
+      "fams": [
+        "94930176"
+      ],
+      "famc": [
+        "43041189"
+      ],
+      "notes": [],
+      "photoIds": [
+        "10570784"
+      ]
+    },
+    "22716208": {
+      "id": "22716208",
+      "givn": "Алексей",
+      "surn": "Оганесов",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "10.08.1982",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "50490888"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "39337534": {
+      "id": "39337534",
+      "givn": "Роза",
+      "surn": "",
+      "secg": "Иосифовна",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "Бырно, Чехословакия",
+      "deathDate": "06.05.1969",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "19672096"
+      ],
+      "fams": [
+        "61773347"
+      ],
+      "famc": [
+        "2327946"
+      ],
+      "notes": [
+        "11207794"
+      ],
+      "photoIds": [
+        "19672096"
+      ]
+    },
+    "89309780": {
+      "id": "89309780",
+      "givn": "Галина",
+      "surn": "Крот",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "59000509"
+      ],
+      "famc": [],
+      "notes": [
+        "51753366"
+      ],
+      "photoIds": []
+    },
+    "5851256": {
+      "id": "5851256",
+      "givn": "Николай",
+      "surn": "Шахназарян",
+      "secg": "Меликович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "4194316"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "80233514": {
+      "id": "80233514",
+      "givn": "Эмма",
+      "surn": "",
+      "secg": "Александровна",
+      "sex": "F",
+      "birthDate": "27.11.1927",
+      "birthPlace": "",
+      "deathDate": "30.12.1999",
+      "deathPlace": "",
+      "occupation": "бухгалтер",
+      "residence": "",
+      "objes": [
+        "93970456"
+      ],
+      "fams": [
+        "28538568"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": [
+        "93970456"
+      ]
+    },
+    "69795034": {
+      "id": "69795034",
+      "givn": "Самит",
+      "surn": "Алекперов",
+      "secg": "Вагифович",
+      "sex": "M",
+      "birthDate": "30.12.1985",
+      "birthPlace": "Москва, Россия",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "водитель",
+      "residence": "",
+      "objes": [
+        "62594072"
+      ],
+      "fams": [
+        "75996768"
+      ],
+      "famc": [
+        "15790966"
+      ],
+      "notes": [],
+      "photoIds": [
+        "62594072"
+      ]
+    },
+    "39120862": {
+      "id": "39120862",
+      "givn": "Владлен",
+      "surn": "Шахназарян",
+      "secg": "Левонович",
+      "sex": "M",
+      "birthDate": "10.02.2011",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "25619018",
+        "6097447"
+      ],
+      "fams": [],
+      "famc": [
+        "47051203"
+      ],
+      "notes": [
+        "73994048"
+      ],
+      "photoIds": [
+        "25619018",
+        "6097447"
+      ]
+    },
+    "70426104": {
+      "id": "70426104",
+      "givn": "Иван",
+      "surn": "Крот",
+      "secg": "Пантелеевич",
+      "sex": "M",
+      "birthDate": "25.05.1932",
+      "birthPlace": "Арбузинка",
+      "deathDate": "05.06.1912",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "4021497",
+        "95056130"
+      ],
+      "fams": [],
+      "famc": [
+        "65858219"
+      ],
+      "notes": [
+        "42818828"
+      ],
+      "photoIds": [
+        "4021497",
+        "95056130"
+      ]
+    },
+    "92672716": {
+      "id": "92672716",
+      "givn": "Алесандр",
+      "surn": "Григорян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "42441152"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "98422829": {
+      "id": "98422829",
+      "givn": "Мария",
+      "surn": "",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "51725101"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "70382396": {
+      "id": "70382396",
+      "givn": "Нина",
+      "surn": "Акопян",
+      "secg": "Арменаковна",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "66967768"
+      ],
+      "fams": [],
+      "famc": [
+        "57375686"
+      ],
+      "notes": [],
+      "photoIds": [
+        "66967768"
+      ]
+    },
+    "22831416": {
+      "id": "22831416",
+      "givn": "Эмма",
+      "surn": "Костанян",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "02.10.1950",
+      "birthPlace": "Чардахлы",
+      "deathDate": "22.10.2001",
+      "deathPlace": "",
+      "occupation": "домохозяйка",
+      "residence": "",
+      "objes": [
+        "51985731"
+      ],
+      "fams": [
+        "94930176"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": [
+        "51985731"
+      ]
+    },
+    "60412864": {
+      "id": "60412864",
+      "givn": "Арусяк",
+      "surn": "Григорян",
+      "secg": "Петросовна",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "домохозяйка",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "27851841"
+      ],
+      "famc": [
+        "76254475"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "4188364": {
+      "id": "4188364",
+      "givn": "Эльмира",
+      "surn": "Оганесова",
+      "secg": "Николаевна",
+      "sex": "F",
+      "birthDate": "18.05.1952",
+      "birthPlace": "",
+      "deathDate": "2019",
+      "deathPlace": "",
+      "occupation": "инженер",
+      "residence": "",
+      "objes": [
+        "53706665"
+      ],
+      "fams": [
+        "76581228"
+      ],
+      "famc": [
+        "45569597"
+      ],
+      "notes": [],
+      "photoIds": [
+        "53706665"
+      ]
+    },
+    "60995756": {
+      "id": "60995756",
+      "givn": "Евгения",
+      "surn": "Оганесова",
+      "secg": "Мамиконовна",
+      "sex": "F",
+      "birthDate": "08.02.1929",
+      "birthPlace": "Шамхор",
+      "deathDate": "13.03.2016",
+      "deathPlace": "",
+      "occupation": "портниха, домохозяйка",
+      "residence": "",
+      "objes": [
+        "58388144"
+      ],
+      "fams": [
+        "15457142"
+      ],
+      "famc": [
+        "43041189"
+      ],
+      "notes": [
+        "13558080"
+      ],
+      "photoIds": [
+        "58388144"
+      ]
+    },
+    "26367166": {
+      "id": "26367166",
+      "givn": "Инна",
+      "surn": "Ишутина",
+      "secg": "Николаевна",
+      "sex": "F",
+      "birthDate": "25.01.1975",
+      "birthPlace": "Шамхор",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "45067962"
+      ],
+      "famc": [
+        "67975978"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "26137706": {
+      "id": "26137706",
+      "givn": "Маруся",
+      "surn": "",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "19741090"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "68918744": {
+      "id": "68918744",
+      "givn": "Ашот",
+      "surn": "Акопян",
+      "secg": "Арменакович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "28745375"
+      ],
+      "fams": [
+        "96645563"
+      ],
+      "famc": [
+        "57375686"
+      ],
+      "notes": [],
+      "photoIds": [
+        "28745375"
+      ]
+    },
+    "46519085": {
+      "id": "46519085",
+      "givn": "Алексей",
+      "surn": "Оганесов",
+      "secg": "Мамиконович",
+      "sex": "M",
+      "birthDate": "1927",
+      "birthPlace": "Шамхор",
+      "deathDate": "1953",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "66627963"
+      ],
+      "fams": [],
+      "famc": [
+        "43041189"
+      ],
+      "notes": [
+        "49136696",
+        "17187616"
+      ],
+      "photoIds": [
+        "66627963"
+      ]
+    },
+    "12458440": {
+      "id": "12458440",
+      "givn": "Михаил",
+      "surn": "Хачатурян",
+      "secg": "Акопович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "директор школы, математик-физик",
+      "residence": "",
+      "objes": [
+        "85475098",
+        "80225941"
+      ],
+      "fams": [
+        "9559046"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": [
+        "85475098",
+        "80225941"
+      ]
+    },
+    "26223903": {
+      "id": "26223903",
+      "givn": "Мамикон",
+      "surn": "Оганесов",
+      "secg": "Петросович",
+      "sex": "M",
+      "birthDate": "1890",
+      "birthPlace": "",
+      "deathDate": "1958",
+      "deathPlace": "",
+      "occupation": "Бухгалтер",
+      "residence": "",
+      "objes": [
+        "139244"
+      ],
+      "fams": [
+        "43041189"
+      ],
+      "famc": [
+        "76254475"
+      ],
+      "notes": [
+        "80777715"
+      ],
+      "photoIds": [
+        "139244"
+      ]
+    },
+    "38153312": {
+      "id": "38153312",
+      "givn": "Артур",
+      "surn": "Оганесян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "28.12.1999",
+      "birthPlace": "Владикавказ",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "45178076"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "66528204": {
+      "id": "66528204",
+      "givn": "Левон",
+      "surn": "Шахназарян",
+      "secg": "Левонович",
+      "sex": "M",
+      "birthDate": "15.02.1978",
+      "birthPlace": "Новочерскасск",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "60487192"
+      ],
+      "fams": [
+        "47051203"
+      ],
+      "famc": [
+        "31247216"
+      ],
+      "notes": [],
+      "photoIds": [
+        "60487192"
+      ]
+    },
+    "25184112": {
+      "id": "25184112",
+      "givn": "Сергей",
+      "surn": "Шахназарян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "01.12.1988",
+      "birthPlace": "Новочерскасск",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "водитель",
+      "residence": "",
+      "objes": [
+        "71468054"
+      ],
+      "fams": [
+        "64649544"
+      ],
+      "famc": [
+        "31247216"
+      ],
+      "notes": [],
+      "photoIds": [
+        "71468054"
+      ]
+    },
+    "31893944": {
+      "id": "31893944",
+      "givn": "Светлана",
+      "surn": "Крот",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "22117806",
+        "88405822"
+      ],
+      "fams": [],
+      "famc": [
+        "59000509"
+      ],
+      "notes": [],
+      "photoIds": [
+        "22117806",
+        "88405822"
+      ]
+    },
+    "90520400": {
+      "id": "90520400",
+      "givn": "Николай",
+      "surn": "Оганесов",
+      "secg": "Мамиконович",
+      "sex": "M",
+      "birthDate": "15.12.1926",
+      "birthPlace": "Шамхор",
+      "deathDate": "10.10.2001",
+      "deathPlace": "",
+      "occupation": "Карбюраторщик",
+      "residence": "",
+      "objes": [
+        "48506802"
+      ],
+      "fams": [
+        "45569597"
+      ],
+      "famc": [
+        "43041189"
+      ],
+      "notes": [],
+      "photoIds": [
+        "48506802"
+      ]
+    },
+    "78203734": {
+      "id": "78203734",
+      "givn": "Пантелей",
+      "surn": "Крот",
+      "secg": "Гордеевич",
+      "sex": "M",
+      "birthDate": "1911",
+      "birthPlace": "Арбузинка",
+      "deathDate": "1981",
+      "deathPlace": "",
+      "occupation": "плотник",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "65858219"
+      ],
+      "famc": [
+        "99699464"
+      ],
+      "notes": [
+        "72741155"
+      ],
+      "photoIds": []
+    },
+    "53910212": {
+      "id": "53910212",
+      "givn": "Астхик (Ася)",
+      "surn": "Амбарцумян",
+      "secg": "Александровна",
+      "sex": "F",
+      "birthDate": "05.01.1908",
+      "birthPlace": "Чардахлы (?)",
+      "deathDate": "01.10.1989",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "64372144"
+      ],
+      "fams": [
+        "73338090",
+        "57003717",
+        "43097178",
+        "71060624",
+        "99212283",
+        "92646073",
+        "45802965",
+        "95606709"
+      ],
+      "famc": [
+        "44543568"
+      ],
+      "notes": [
+        "89666981"
+      ],
+      "photoIds": [
+        "64372144"
+      ]
+    },
+    "21290742": {
+      "id": "21290742",
+      "givn": "Аида",
+      "surn": "Шахназарян",
+      "secg": "Левоновна",
+      "sex": "F",
+      "birthDate": "08.06.1955",
+      "birthPlace": "Шамхор(?)",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "59309336",
+        "50535492"
+      ],
+      "fams": [
+        "31247216"
+      ],
+      "famc": [
+        "4539640"
+      ],
+      "notes": [
+        "36364625"
+      ],
+      "photoIds": [
+        "59309336",
+        "50535492"
+      ]
+    },
+    "40277745": {
+      "id": "40277745",
+      "givn": "Кнарик",
+      "surn": "Шахназарян",
+      "secg": "Оганесовна",
+      "sex": "F",
+      "birthDate": "1927(?)",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "68696484"
+      ],
+      "fams": [
+        "35068740"
+      ],
+      "famc": [
+        "57003717"
+      ],
+      "notes": [
+        "57444608"
+      ],
+      "photoIds": [
+        "68696484"
+      ]
+    },
+    "77963316": {
+      "id": "77963316",
+      "givn": "Иосиф",
+      "surn": "",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "2327946"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "83747296": {
+      "id": "83747296",
+      "givn": "Амалия",
+      "surn": "Саркисян",
+      "secg": "Маратовна",
+      "sex": "F",
+      "birthDate": "16.06.1998",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "2254223"
+      ],
+      "fams": [
+        "71578338"
+      ],
+      "famc": [
+        "52497152"
+      ],
+      "notes": [],
+      "photoIds": [
+        "2254223"
+      ]
+    },
+    "22002743": {
+      "id": "22002743",
+      "givn": "Армине",
+      "surn": "Оганесова",
+      "secg": "Владимировна",
+      "sex": "F",
+      "birthDate": "22.03.1970",
+      "birthPlace": "Шамхор",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "верховный судья",
+      "residence": "",
+      "objes": [
+        "50823692"
+      ],
+      "fams": [
+        "45178076"
+      ],
+      "famc": [
+        "94930176"
+      ],
+      "notes": [],
+      "photoIds": [
+        "50823692"
+      ]
+    },
+    "35461544": {
+      "id": "35461544",
+      "givn": "Вагран",
+      "surn": "",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "инженер",
+      "residence": "",
+      "objes": [
+        "84023928"
+      ],
+      "fams": [
+        "76581228"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": [
+        "84023928"
+      ]
+    },
+    "28263536": {
+      "id": "28263536",
+      "givn": "Шамир",
+      "surn": "Азарян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "1942(1943)",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "39094603"
+      ],
+      "fams": [
+        "61773347"
+      ],
+      "famc": [],
+      "notes": [
+        "18336368",
+        "63917056"
+      ],
+      "photoIds": [
+        "39094603"
+      ]
+    },
+    "88104585": {
+      "id": "88104585",
+      "givn": "Мария",
+      "surn": "Оганесов",
+      "secg": "Владимировна",
+      "sex": "F",
+      "birthDate": "05.01.1969",
+      "birthPlace": "Шамхор",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "педагог русского языка и литературы в коррекционной школе",
+      "residence": "",
+      "objes": [
+        "36420028"
+      ],
+      "fams": [
+        "35065972"
+      ],
+      "famc": [
+        "94930176"
+      ],
+      "notes": [],
+      "photoIds": [
+        "36420028"
+      ]
+    },
+    "60925064": {
+      "id": "60925064",
+      "givn": "Дмитрий",
+      "surn": "Курудимов",
+      "secg": "Иванович",
+      "sex": "M",
+      "birthDate": "1904",
+      "birthPlace": "",
+      "deathDate": "1976",
+      "deathPlace": "Чадыр-Лунга, , , Молдова",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "91104529"
+      ],
+      "famc": [],
+      "notes": [
+        "37962096",
+        "95737392"
+      ],
+      "photoIds": []
+    },
+    "97518144": {
+      "id": "97518144",
+      "givn": "Карина",
+      "surn": "Хачатурян",
+      "secg": "Михайловна",
+      "sex": "F",
+      "birthDate": "1957",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "врач-терапевт",
+      "residence": "",
+      "objes": [
+        "30451314",
+        "81978844"
+      ],
+      "fams": [
+        "74062392"
+      ],
+      "famc": [
+        "9559046"
+      ],
+      "notes": [],
+      "photoIds": [
+        "30451314",
+        "81978844"
+      ]
+    },
+    "47169136": {
+      "id": "47169136",
+      "givn": "Рантик",
+      "surn": "Григорян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "42441152"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "99125432": {
+      "id": "99125432",
+      "givn": "Нварт",
+      "surn": "Аракелян",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "Чардахлы",
+      "deathDate": "09.09.1978",
+      "deathPlace": "",
+      "occupation": "домохозяйка",
+      "residence": "",
+      "objes": [
+        "42973500",
+        "30430688"
+      ],
+      "fams": [
+        "45569597"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": [
+        "42973500",
+        "30430688"
+      ]
+    },
+    "84043736": {
+      "id": "84043736",
+      "givn": "Аксиния",
+      "surn": "Дыба",
+      "secg": "Макаровна",
+      "sex": "F",
+      "birthDate": "15.05.1907",
+      "birthPlace": "Арбузинка",
+      "deathDate": "13.01.1968",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "92141438",
+        "64829933"
+      ],
+      "fams": [
+        "65858219"
+      ],
+      "famc": [
+        "47397742"
+      ],
+      "notes": [
+        "92941414"
+      ],
+      "photoIds": [
+        "92141438",
+        "64829933"
+      ]
+    },
+    "91820440": {
+      "id": "91820440",
+      "givn": "Мелик",
+      "surn": "Шахназарян",
+      "secg": "Меликович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "32364304"
+      ],
+      "fams": [
+        "4194316"
+      ],
+      "famc": [
+        "77561240"
+      ],
+      "notes": [
+        "74579635"
+      ],
+      "photoIds": [
+        "32364304"
+      ]
+    },
+    "94563122": {
+      "id": "94563122",
+      "givn": "Раиса",
+      "surn": "Ишутина (Шахназарян)",
+      "secg": "Сергеевна",
+      "sex": "F",
+      "birthDate": "26.10.1948",
+      "birthPlace": "Шамхор",
+      "deathDate": "01.12.2020",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "80387329"
+      ],
+      "fams": [
+        "67975978"
+      ],
+      "famc": [
+        "59726481"
+      ],
+      "notes": [],
+      "photoIds": [
+        "80387329"
+      ]
+    },
+    "53691942": {
+      "id": "53691942",
+      "givn": "Амалия",
+      "surn": "Шахназарян",
+      "secg": "Оганесовна",
+      "sex": "F",
+      "birthDate": "03.09.1927",
+      "birthPlace": "",
+      "deathDate": "03.05.1902",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "50859818"
+      ],
+      "fams": [
+        "59726481"
+      ],
+      "famc": [
+        "57003717"
+      ],
+      "notes": [],
+      "photoIds": [
+        "50859818"
+      ]
+    },
+    "49400950": {
+      "id": "49400950",
+      "givn": "Эльвин",
+      "surn": "Алекперов",
+      "secg": "Самитович",
+      "sex": "M",
+      "birthDate": "11.12.2011",
+      "birthPlace": "Москва, Россия",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "69602024"
+      ],
+      "fams": [],
+      "famc": [
+        "75996768"
+      ],
+      "notes": [],
+      "photoIds": [
+        "69602024"
+      ]
+    },
+    "28957872": {
+      "id": "28957872",
+      "givn": "Эльмир",
+      "surn": "Алекперов",
+      "secg": "Вагифович",
+      "sex": "M",
+      "birthDate": "20.10.1992",
+      "birthPlace": "Москва",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "46835210"
+      ],
+      "fams": [
+        "37806336"
+      ],
+      "famc": [
+        "15790966"
+      ],
+      "notes": [],
+      "photoIds": [
+        "46835210"
+      ]
+    },
+    "75475466": {
+      "id": "75475466",
+      "givn": "Кирилл",
+      "surn": "Шахназарян",
+      "secg": "Арменович",
+      "sex": "M",
+      "birthDate": "25.06.2024",
+      "birthPlace": "Москва, Россия",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "22268112"
+      ],
+      "fams": [],
+      "famc": [
+        "76273960"
+      ],
+      "notes": [],
+      "photoIds": [
+        "22268112"
+      ]
+    },
+    "69380904": {
+      "id": "69380904",
+      "givn": "",
+      "surn": "Оганесов",
+      "secg": "Мамиконович",
+      "sex": "M",
+      "birthDate": "1924",
+      "birthPlace": "",
+      "deathDate": "1943",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "12820188"
+      ],
+      "fams": [],
+      "famc": [
+        "43041189"
+      ],
+      "notes": [
+        "46811640"
+      ],
+      "photoIds": [
+        "12820188"
+      ]
+    },
+    "99093466": {
+      "id": "99093466",
+      "givn": "Ольга",
+      "surn": "Оганесов",
+      "secg": "Мамиконовна",
+      "sex": "F",
+      "birthDate": "23.09.1939",
+      "birthPlace": "Шамхор",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "Педагог музыки",
+      "residence": "",
+      "objes": [
+        "3825404"
+      ],
+      "fams": [
+        "17094928"
+      ],
+      "famc": [
+        "43041189"
+      ],
+      "notes": [
+        "99775516"
+      ],
+      "photoIds": [
+        "3825404"
+      ]
+    },
+    "2339784": {
+      "id": "2339784",
+      "givn": "",
+      "surn": "Шахназарян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "51639795": {
+      "id": "51639795",
+      "givn": "Петрос",
+      "surn": "Оганесов",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "Колхозник",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "76254475"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "45638860": {
+      "id": "45638860",
+      "givn": "Римма",
+      "surn": "Шахназарян",
+      "secg": "Меликовна",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "4194316"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "33064456": {
+      "id": "33064456",
+      "givn": "Зина",
+      "surn": "",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "15766393"
+      ],
+      "fams": [
+        "96645563"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": [
+        "15766393"
+      ]
+    },
+    "14657656": {
+      "id": "14657656",
+      "givn": "Элина",
+      "surn": "Аганян",
+      "secg": "Саятовна",
+      "sex": "F",
+      "birthDate": "18.05.1993",
+      "birthPlace": "Обинск",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "77650609"
+      ],
+      "fams": [
+        "63051374"
+      ],
+      "famc": [
+        "35065972"
+      ],
+      "notes": [],
+      "photoIds": [
+        "77650609"
+      ]
+    },
+    "61558393": {
+      "id": "61558393",
+      "givn": "Эмма",
+      "surn": "Азарян",
+      "secg": "Шамировна",
+      "sex": "F",
+      "birthDate": "15.08.1954",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "воспитатель в детском саду",
+      "residence": "",
+      "objes": [
+        "33702489"
+      ],
+      "fams": [
+        "68360380"
+      ],
+      "famc": [
+        "15457142"
+      ],
+      "notes": [],
+      "photoIds": [
+        "33702489"
+      ]
+    },
+    "92989602": {
+      "id": "92989602",
+      "givn": "Эдуард",
+      "surn": "Азарян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "25.06.1978",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "54465339",
+        "86350944"
+      ],
+      "fams": [
+        "72515318"
+      ],
+      "famc": [
+        "68360380"
+      ],
+      "notes": [],
+      "photoIds": [
+        "54465339",
+        "86350944"
+      ]
+    },
+    "82451526": {
+      "id": "82451526",
+      "givn": "Арменак",
+      "surn": "Акопян",
+      "secg": "Иванович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "складчик",
+      "residence": "",
+      "objes": [
+        "26828630"
+      ],
+      "fams": [
+        "57375686"
+      ],
+      "famc": [
+        "17993864"
+      ],
+      "notes": [
+        "20303776"
+      ],
+      "photoIds": [
+        "26828630"
+      ]
+    },
+    "51201792": {
+      "id": "51201792",
+      "givn": "Алина",
+      "surn": "Шахназарян",
+      "secg": "Левоновна",
+      "sex": "M",
+      "birthDate": "19.05.2005",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "22981150"
+      ],
+      "fams": [],
+      "famc": [
+        "47051203"
+      ],
+      "notes": [
+        "25352182"
+      ],
+      "photoIds": [
+        "22981150"
+      ]
+    },
+    "62538359": {
+      "id": "62538359",
+      "givn": "Самсон",
+      "surn": "Пнджоян",
+      "secg": "Саятович",
+      "sex": "M",
+      "birthDate": "21.08.1995",
+      "birthPlace": "Обинск",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "77659695"
+      ],
+      "fams": [
+        "69233133"
+      ],
+      "famc": [
+        "35065972"
+      ],
+      "notes": [],
+      "photoIds": [
+        "77659695"
+      ]
+    },
+    "83653520": {
+      "id": "83653520",
+      "givn": "Мария",
+      "surn": "Акопян",
+      "secg": "Ивановна",
+      "sex": "F",
+      "birthDate": "1900",
+      "birthPlace": "Чардахлы",
+      "deathDate": "02.1973",
+      "deathPlace": "",
+      "occupation": "домохозяйка",
+      "residence": "",
+      "objes": [
+        "88291824"
+      ],
+      "fams": [
+        "43041189"
+      ],
+      "famc": [
+        "17993864"
+      ],
+      "notes": [
+        "19904442"
+      ],
+      "photoIds": [
+        "88291824"
+      ]
+    },
+    "59405470": {
+      "id": "59405470",
+      "givn": "Левон",
+      "surn": "Шахназарян",
+      "secg": "Оганесович",
+      "sex": "M",
+      "birthDate": "10.09.1933",
+      "birthPlace": "Шамхор(?)",
+      "deathDate": "09.0,.2007",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "57687664"
+      ],
+      "fams": [
+        "4539640",
+        "6890281"
+      ],
+      "famc": [
+        "57003717"
+      ],
+      "notes": [
+        "14269082"
+      ],
+      "photoIds": [
+        "57687664"
+      ]
+    },
+    "5722333": {
+      "id": "5722333",
+      "givn": "Мушех",
+      "surn": "Шахназарян",
+      "secg": "Меликович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "1014392"
+      ],
+      "fams": [
+        "19741090"
+      ],
+      "famc": [
+        "77561240"
+      ],
+      "notes": [
+        "25996081"
+      ],
+      "photoIds": [
+        "1014392"
+      ]
+    },
+    "93189758": {
+      "id": "93189758",
+      "givn": "Варвара (Варинга)",
+      "surn": "Шахназарян",
+      "secg": "Меликовна",
+      "sex": "F",
+      "birthDate": "1904",
+      "birthPlace": "",
+      "deathDate": "1983",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "52337386",
+        "43062692"
+      ],
+      "fams": [
+        "86511473"
+      ],
+      "famc": [
+        "77561240"
+      ],
+      "notes": [
+        "63378576"
+      ],
+      "photoIds": [
+        "52337386",
+        "43062692"
+      ]
+    },
+    "82112908": {
+      "id": "82112908",
+      "givn": "Асадбулах",
+      "surn": "Алекперов",
+      "secg": "Эльмирович",
+      "sex": "M",
+      "birthDate": "10.04.2024",
+      "birthPlace": "Москва, Россия",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "37806336"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "95547960": {
+      "id": "95547960",
+      "givn": "Шамир (Иосиф)",
+      "surn": "Азарян",
+      "secg": "Шамирович",
+      "sex": "M",
+      "birthDate": "14.10.1919",
+      "birthPlace": "Венгрия, Уйтпешт",
+      "deathDate": "30.03.2007",
+      "deathPlace": "",
+      "occupation": "начальник автоколонны",
+      "residence": "",
+      "objes": [
+        "30986744"
+      ],
+      "fams": [
+        "15457142"
+      ],
+      "famc": [
+        "61773347"
+      ],
+      "notes": [
+        "91240757"
+      ],
+      "photoIds": [
+        "30986744"
+      ]
+    },
+    "91743768": {
+      "id": "91743768",
+      "givn": "Николай",
+      "surn": "Ишутин",
+      "secg": "Алексеевич",
+      "sex": "M",
+      "birthDate": "05.01.1948",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "67975978"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "89331712": {
+      "id": "89331712",
+      "givn": "Сумбат",
+      "surn": "Данилян",
+      "secg": "Вартанович",
+      "sex": "M",
+      "birthDate": "2.02.1924",
+      "birthPlace": "",
+      "deathDate": "09.09.2002",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "34737168"
+      ],
+      "fams": [
+        "28538568"
+      ],
+      "famc": [
+        "86511473"
+      ],
+      "notes": [],
+      "photoIds": [
+        "34737168"
+      ]
+    },
+    "38074759": {
+      "id": "38074759",
+      "givn": "Александр",
+      "surn": "Даниелян",
+      "secg": "Сумбатович",
+      "sex": "M",
+      "birthDate": "09.03.1954",
+      "birthPlace": "Киравобад",
+      "deathDate": "06.01.1980",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "962076"
+      ],
+      "fams": [],
+      "famc": [
+        "28538568"
+      ],
+      "notes": [],
+      "photoIds": [
+        "962076"
+      ]
+    },
+    "50751378": {
+      "id": "50751378",
+      "givn": "Зоя",
+      "surn": "Григорян",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "42441152"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "75406412": {
+      "id": "75406412",
+      "givn": "Светлана",
+      "surn": "Азарян",
+      "secg": "Шамировна",
+      "sex": "F",
+      "birthDate": "26.06.1959",
+      "birthPlace": "Киравобад",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "начальник первоначального призыва в военкомате",
+      "residence": "",
+      "objes": [
+        "4742396",
+        "16066293"
+      ],
+      "fams": [
+        "15790966"
+      ],
+      "famc": [
+        "15457142"
+      ],
+      "notes": [],
+      "photoIds": [
+        "4742396",
+        "16066293"
+      ]
+    },
+    "94452686": {
+      "id": "94452686",
+      "givn": "Вартан",
+      "surn": "Данилян",
+      "secg": "Сумбатович",
+      "sex": "M",
+      "birthDate": "20.08.1952",
+      "birthPlace": "Киравобад",
+      "deathDate": "24.04.2008",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "26417254"
+      ],
+      "fams": [],
+      "famc": [
+        "28538568"
+      ],
+      "notes": [],
+      "photoIds": [
+        "26417254"
+      ]
+    },
+    "71447860": {
+      "id": "71447860",
+      "givn": "Анатолий",
+      "surn": "Крот",
+      "secg": "Пантелеевич",
+      "sex": "M",
+      "birthDate": "1939",
+      "birthPlace": "",
+      "deathDate": "2006",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "59000509"
+      ],
+      "famc": [
+        "65858219"
+      ],
+      "notes": [
+        "13337682"
+      ],
+      "photoIds": []
+    },
+    "78152620": {
+      "id": "78152620",
+      "givn": "Виктор",
+      "surn": "Самсонов",
+      "secg": "Фокич",
+      "sex": "M",
+      "birthDate": "31.01",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "67805611"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "51822574": {
+      "id": "51822574",
+      "givn": "Этери",
+      "surn": "Акопян",
+      "secg": "Арменаковна",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "71972702",
+        "39245697"
+      ],
+      "fams": [
+        "5842345"
+      ],
+      "famc": [
+        "57375686"
+      ],
+      "notes": [],
+      "photoIds": [
+        "71972702",
+        "39245697"
+      ]
+    },
+    "85266456": {
+      "id": "85266456",
+      "givn": "Раиса",
+      "surn": "Акопян",
+      "secg": "Арменаковна",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "57832486"
+      ],
+      "fams": [],
+      "famc": [
+        "57375686"
+      ],
+      "notes": [],
+      "photoIds": [
+        "57832486"
+      ]
+    },
+    "48566228": {
+      "id": "48566228",
+      "givn": "Григорий",
+      "surn": "Данилян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "71578338"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "31727579": {
+      "id": "31727579",
+      "givn": "Михаил",
+      "surn": "Григорян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "42441152"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "57289736": {
+      "id": "57289736",
+      "givn": "Иван",
+      "surn": "Оганесов",
+      "secg": "Николаевич",
+      "sex": "M",
+      "birthDate": "16.05.1954",
+      "birthPlace": "",
+      "deathDate": "2014",
+      "deathPlace": "",
+      "occupation": "Карбюраторщик",
+      "residence": "",
+      "objes": [
+        "1311838"
+      ],
+      "fams": [
+        "50490888"
+      ],
+      "famc": [
+        "45569597"
+      ],
+      "notes": [
+        "93512028"
+      ],
+      "photoIds": [
+        "1311838"
+      ]
+    },
+    "22115358": {
+      "id": "22115358",
+      "givn": "Рита",
+      "surn": "Михаелян",
+      "secg": "Левоновна",
+      "sex": "F",
+      "birthDate": "1960",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "86184048"
+      ],
+      "fams": [],
+      "famc": [
+        "17094928"
+      ],
+      "notes": [],
+      "photoIds": [
+        "86184048"
+      ]
+    },
+    "79633492": {
+      "id": "79633492",
+      "givn": "Мариетта",
+      "surn": "Михаелян",
+      "secg": "Левоновна",
+      "sex": "F",
+      "birthDate": "26.09.1964",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "46546160"
+      ],
+      "fams": [],
+      "famc": [
+        "17094928"
+      ],
+      "notes": [],
+      "photoIds": [
+        "46546160"
+      ]
+    },
+    "58277898": {
+      "id": "58277898",
+      "givn": "Оганес",
+      "surn": "Шахназарян",
+      "secg": "Меликович",
+      "sex": "M",
+      "birthDate": "20.03.1902",
+      "birthPlace": "Чардахлы (?)",
+      "deathDate": "03.1980",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "44743524"
+      ],
+      "fams": [
+        "57003717"
+      ],
+      "famc": [
+        "77561240"
+      ],
+      "notes": [
+        "94090546"
+      ],
+      "photoIds": [
+        "44743524"
+      ]
+    },
+    "85093739": {
+      "id": "85093739",
+      "givn": "Алексей",
+      "surn": "Ишутин",
+      "secg": "Флоревич",
+      "sex": "M",
+      "birthDate": "16.07.2003",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "90346959"
+      ],
+      "fams": [],
+      "famc": [
+        "45067962"
+      ],
+      "notes": [],
+      "photoIds": [
+        "90346959"
+      ]
+    },
+    "53459639": {
+      "id": "53459639",
+      "givn": "Сергей",
+      "surn": "Арутюнов",
+      "secg": "Саркисович",
+      "sex": "M",
+      "birthDate": "22.01.1927",
+      "birthPlace": "Грузия, Тбилиси",
+      "deathDate": "01.07.1996",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "59726481"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "57066128": {
+      "id": "57066128",
+      "givn": "Юрий",
+      "surn": "Самсонов",
+      "secg": "Викторович",
+      "sex": "M",
+      "birthDate": "01.02",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "13927024"
+      ],
+      "fams": [],
+      "famc": [
+        "67805611"
+      ],
+      "notes": [],
+      "photoIds": [
+        "13927024"
+      ]
+    },
+    "70092152": {
+      "id": "70092152",
+      "givn": "Зоя",
+      "surn": "Оганесова",
+      "secg": "Николаевна",
+      "sex": "F",
+      "birthDate": "17.12.1947(?)",
+      "birthPlace": "",
+      "deathDate": "1999",
+      "deathPlace": "",
+      "occupation": "педагог русского языка",
+      "residence": "",
+      "objes": [
+        "23056403"
+      ],
+      "fams": [],
+      "famc": [
+        "45569597"
+      ],
+      "notes": [],
+      "photoIds": [
+        "23056403"
+      ]
+    },
+    "2684516": {
+      "id": "2684516",
+      "givn": "Соня",
+      "surn": "Акопян",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "17993864"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "61563936": {
+      "id": "61563936",
+      "givn": "Алина",
+      "surn": "Азарян",
+      "secg": "Эдуардовна",
+      "sex": "F",
+      "birthDate": "02.07.2005",
+      "birthPlace": "Москва, Россия",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "40261675"
+      ],
+      "fams": [],
+      "famc": [
+        "72515318"
+      ],
+      "notes": [],
+      "photoIds": [
+        "40261675"
+      ]
+    },
+    "59077724": {
+      "id": "59077724",
+      "givn": "Саркис",
+      "surn": "Оганян",
+      "secg": "Араикович",
+      "sex": "M",
+      "birthDate": "06.06.2011",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "82656930"
+      ],
+      "fams": [],
+      "famc": [
+        "63051374"
+      ],
+      "notes": [],
+      "photoIds": [
+        "82656930"
+      ]
+    },
+    "14883522": {
+      "id": "14883522",
+      "givn": "Карен",
+      "surn": "Акопян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "5842345"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "88607001": {
+      "id": "88607001",
+      "givn": "Владимир",
+      "surn": "",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "49311504"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "42743584": {
+      "id": "42743584",
+      "givn": "Карен",
+      "surn": "Хачатурян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "21018678"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "95966552": {
+      "id": "95966552",
+      "givn": "Нора",
+      "surn": "Хачатурян",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "49311504"
+      ],
+      "famc": [
+        "5748130"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "50998676": {
+      "id": "50998676",
+      "givn": "Эмма",
+      "surn": "",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "56123300"
+      ],
+      "fams": [
+        "5748130"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": [
+        "56123300"
+      ]
+    },
+    "10484156": {
+      "id": "10484156",
+      "givn": "Вартгез",
+      "surn": "",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "27833362"
+      ],
+      "fams": [
+        "74062392"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": [
+        "27833362"
+      ]
+    },
+    "91436958": {
+      "id": "91436958",
+      "givn": "Симон",
+      "surn": "Саркисян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "следователь",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "71578338"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "29960540": {
+      "id": "29960540",
+      "givn": "Сона",
+      "surn": "Хачатурян",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "74062392"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "79896933": {
+      "id": "79896933",
+      "givn": "Геворг",
+      "surn": "",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "16825189"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "77124813": {
+      "id": "77124813",
+      "givn": "Марат",
+      "surn": "",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "52497152"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "9740114": {
+      "id": "9740114",
+      "givn": "Люсине",
+      "surn": "Хачатурян",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "38752424"
+      ],
+      "fams": [],
+      "famc": [
+        "5748130"
+      ],
+      "notes": [],
+      "photoIds": [
+        "38752424"
+      ]
+    },
+    "46865148": {
+      "id": "46865148",
+      "givn": "Лиана",
+      "surn": "Хачатурян",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "16825189"
+      ],
+      "famc": [
+        "74062392"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "69986256": {
+      "id": "69986256",
+      "givn": "Валентина",
+      "surn": "",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "94627929"
+      ],
+      "fams": [
+        "29192042"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": [
+        "94627929"
+      ]
+    },
+    "15722944": {
+      "id": "15722944",
+      "givn": "Наира",
+      "surn": "Хачатурян",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "12039456"
+      ],
+      "famc": [
+        "5748130"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "72817202": {
+      "id": "72817202",
+      "givn": "Арам",
+      "surn": "",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "12039456"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "85828040": {
+      "id": "85828040",
+      "givn": "Наира",
+      "surn": "Акопян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "учитель английского языка",
+      "residence": "",
+      "objes": [
+        "7855045"
+      ],
+      "fams": [],
+      "famc": [
+        "5842345"
+      ],
+      "notes": [],
+      "photoIds": [
+        "7855045"
+      ]
+    },
+    "12799968": {
+      "id": "12799968",
+      "givn": "Григорий",
+      "surn": "Курудимов",
+      "secg": "Дмитриевич",
+      "sex": "M",
+      "birthDate": "1945",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "41970865"
+      ],
+      "fams": [],
+      "famc": [
+        "91104529"
+      ],
+      "notes": [
+        "24796866"
+      ],
+      "photoIds": [
+        "41970865"
+      ]
+    },
+    "97838145": {
+      "id": "97838145",
+      "givn": "Александр",
+      "surn": "Акопян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "5842345"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "52966150": {
+      "id": "52966150",
+      "givn": "Эмилия",
+      "surn": "Пнджоян",
+      "secg": "Самсоновна",
+      "sex": "F",
+      "birthDate": "24.11.2023",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "80300168"
+      ],
+      "fams": [],
+      "famc": [
+        "69233133"
+      ],
+      "notes": [],
+      "photoIds": [
+        "80300168"
+      ]
+    },
+    "73191004": {
+      "id": "73191004",
+      "givn": "Моне",
+      "surn": "Хачатурян",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "49311504"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "72128064": {
+      "id": "72128064",
+      "givn": "Рузана",
+      "surn": "Оганян",
+      "secg": "Араиковна",
+      "sex": "F",
+      "birthDate": "26.07.2012",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "47315347"
+      ],
+      "fams": [],
+      "famc": [
+        "63051374"
+      ],
+      "notes": [],
+      "photoIds": [
+        "47315347"
+      ]
+    },
+    "53528394": {
+      "id": "53528394",
+      "givn": "Мухик",
+      "surn": "Шахназарян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "4313512"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "90269543": {
+      "id": "90269543",
+      "givn": "Араик",
+      "surn": "Оганян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "63051374"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "60419498": {
+      "id": "60419498",
+      "givn": "Роман",
+      "surn": "Шахназарян",
+      "secg": "Сергеевич",
+      "sex": "M",
+      "birthDate": "11.07.2012",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "13343136",
+        "42002622"
+      ],
+      "fams": [],
+      "famc": [
+        "64649544"
+      ],
+      "notes": [],
+      "photoIds": [
+        "13343136",
+        "42002622"
+      ]
+    },
+    "27484925": {
+      "id": "27484925",
+      "givn": "Марика",
+      "surn": "",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "423666"
+      ],
+      "fams": [
+        "1220336"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": [
+        "423666"
+      ]
+    },
+    "44747289": {
+      "id": "44747289",
+      "givn": "Иван",
+      "surn": "Романенко",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "86009712"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "69993876": {
+      "id": "69993876",
+      "givn": "Нелли",
+      "surn": "Соколова",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "68356064"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "38321359": {
+      "id": "38321359",
+      "givn": "Константин",
+      "surn": "Манастырлы",
+      "secg": "Михайлович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "2633656"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "34372319": {
+      "id": "34372319",
+      "givn": "Николай",
+      "surn": "Манастырлы",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "13315562"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "27974232": {
+      "id": "27974232",
+      "givn": "Михаил",
+      "surn": "Генов",
+      "secg": "Васильевич",
+      "sex": "M",
+      "birthDate": "1930(?)",
+      "birthPlace": "",
+      "deathDate": "1997(?)",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "2633656"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "25876188": {
+      "id": "25876188",
+      "givn": "",
+      "surn": "Дыба",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "1933",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "30866526",
+        "47397742"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "89685367": {
+      "id": "89685367",
+      "givn": "Степан",
+      "surn": "Крот",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "99699464"
+      ],
+      "notes": [
+        "81115520",
+        "84583092"
+      ],
+      "photoIds": []
+    },
+    "65170098": {
+      "id": "65170098",
+      "givn": "",
+      "surn": "Крот",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "56546858"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "10301324": {
+      "id": "10301324",
+      "givn": "Анастасия",
+      "surn": "Крот",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "56546858"
+      ],
+      "famc": [
+        "99699464"
+      ],
+      "notes": [
+        "79183360"
+      ],
+      "photoIds": []
+    },
+    "43278824": {
+      "id": "43278824",
+      "givn": "Макар",
+      "surn": "Дыба",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "1914",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "47397742"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "46054880": {
+      "id": "46054880",
+      "givn": "Никита",
+      "surn": "",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "30866526"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "18527460": {
+      "id": "18527460",
+      "givn": "Вера",
+      "surn": "Генова",
+      "secg": "Дмитриевна",
+      "sex": "F",
+      "birthDate": "1932",
+      "birthPlace": "",
+      "deathDate": "2003",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "2633656"
+      ],
+      "famc": [
+        "91104529"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "68737075": {
+      "id": "68737075",
+      "givn": "Христина",
+      "surn": "",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "7302831"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "10425098": {
+      "id": "10425098",
+      "givn": "Матрена",
+      "surn": "Крот",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "99699464"
+      ],
+      "notes": [
+        "85514400"
+      ],
+      "photoIds": []
+    },
+    "58668983": {
+      "id": "58668983",
+      "givn": "Софья",
+      "surn": "Курудимов",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "91104529"
+      ],
+      "notes": [
+        "41202139"
+      ],
+      "photoIds": []
+    },
+    "211211": {
+      "id": "211211",
+      "givn": "Гордей",
+      "surn": "Крот",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "99699464"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "27934558": {
+      "id": "27934558",
+      "givn": "Иван",
+      "surn": "Крот",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "99699464"
+      ],
+      "notes": [
+        "17270017"
+      ],
+      "photoIds": []
+    },
+    "85962631": {
+      "id": "85962631",
+      "givn": "Людмила",
+      "surn": "",
+      "secg": "Ивановна",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "70383756"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "96516677": {
+      "id": "96516677",
+      "givn": "",
+      "surn": "Манастырлы",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "13315562"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "78767740": {
+      "id": "78767740",
+      "givn": "Владимир",
+      "surn": "Манастырлы",
+      "secg": "Михайлович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "13315562"
+      ],
+      "famc": [
+        "86023356"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "30767836": {
+      "id": "30767836",
+      "givn": "",
+      "surn": "Манастырлы",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "13315562"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "97731232": {
+      "id": "97731232",
+      "givn": "Иван",
+      "surn": "Курудимов",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "91104529"
+      ],
+      "notes": [
+        "13921848"
+      ],
+      "photoIds": []
+    },
+    "18353637": {
+      "id": "18353637",
+      "givn": "Федора",
+      "surn": "Генова",
+      "secg": "Николаевна",
+      "sex": "F",
+      "birthDate": "1905",
+      "birthPlace": "",
+      "deathDate": "1977",
+      "deathPlace": "",
+      "occupation": "домохозяйка",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "91104529"
+      ],
+      "famc": [],
+      "notes": [
+        "79113654"
+      ],
+      "photoIds": []
+    },
+    "28841329": {
+      "id": "28841329",
+      "givn": "Михаил",
+      "surn": "Манастырлы",
+      "secg": "Михайлович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "86023356"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "74583576": {
+      "id": "74583576",
+      "givn": "Ольга",
+      "surn": "Манастырлы",
+      "secg": "Михайловна",
+      "sex": "F",
+      "birthDate": "1964",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "86023356"
+      ],
+      "famc": [
+        "2633656"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "25905925": {
+      "id": "25905925",
+      "givn": "Нина",
+      "surn": "Соколова",
+      "secg": "Никитична",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "68356064"
+      ],
+      "famc": [
+        "30866526"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "9368319": {
+      "id": "9368319",
+      "givn": "Евгения",
+      "surn": "",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "30866526"
+      ],
+      "notes": [
+        "99356221"
+      ],
+      "photoIds": []
+    },
+    "56939593": {
+      "id": "56939593",
+      "givn": "Галина",
+      "surn": "Соколова",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "68356064"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "25538786": {
+      "id": "25538786",
+      "givn": "Сергей",
+      "surn": "Геноа",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "70383756"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "45013758": {
+      "id": "45013758",
+      "givn": "Леня",
+      "surn": "Соколова",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "68356064"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "82196264": {
+      "id": "82196264",
+      "givn": "Александр",
+      "surn": "Генов",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "70383756"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "59530368": {
+      "id": "59530368",
+      "givn": "Иван",
+      "surn": "Геноа",
+      "secg": "Михайлович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "70383756"
+      ],
+      "famc": [
+        "2633656"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "66333039": {
+      "id": "66333039",
+      "givn": "",
+      "surn": "Манастырлы",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "13315562"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "93319936": {
+      "id": "93319936",
+      "givn": "Людмила",
+      "surn": "",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "13315562"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "26111441": {
+      "id": "26111441",
+      "givn": "Лариса",
+      "surn": "Шахназарян",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "91913024"
+      ],
+      "famc": [
+        "35068740"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "32309763": {
+      "id": "32309763",
+      "givn": "Екатерина",
+      "surn": "Моисеенко",
+      "secg": "Николаевна",
+      "sex": "F",
+      "birthDate": "18.07.1980",
+      "birthPlace": "Новочерскасск",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "86186271"
+      ],
+      "fams": [
+        "47051203"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": [
+        "86186271"
+      ]
+    },
+    "9128884": {
+      "id": "9128884",
+      "givn": "Роман",
+      "surn": "Шахназарян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "91913024"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "40100648": {
+      "id": "40100648",
+      "givn": "Рафик",
+      "surn": "Шахназарян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "35068740"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "90644016": {
+      "id": "90644016",
+      "givn": "Мельсик",
+      "surn": "Шахназарян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "35068740"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "28891336": {
+      "id": "28891336",
+      "givn": "Бекдурды",
+      "surn": "Атабаев",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "34803863"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "77956280": {
+      "id": "77956280",
+      "givn": "Рена",
+      "surn": "Бадалян",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "35879148"
+      ],
+      "notes": [
+        "38249300"
+      ],
+      "photoIds": []
+    },
+    "48651313": {
+      "id": "48651313",
+      "givn": "Рена",
+      "surn": "Бадалян",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "35879148"
+      ],
+      "famc": [
+        "91913024"
+      ],
+      "notes": [
+        "62608717"
+      ],
+      "photoIds": []
+    },
+    "87615801": {
+      "id": "87615801",
+      "givn": "Ганна",
+      "surn": "Бадалян",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "88791118"
+      ],
+      "fams": [],
+      "famc": [
+        "35879148"
+      ],
+      "notes": [
+        "37130924"
+      ],
+      "photoIds": [
+        "88791118"
+      ]
+    },
+    "39635072": {
+      "id": "39635072",
+      "givn": "Лариса",
+      "surn": "Атабаева",
+      "secg": "Бекдурдыевна",
+      "sex": "F",
+      "birthDate": "28.06.1987",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "1580560"
+      ],
+      "fams": [
+        "85029912"
+      ],
+      "famc": [
+        "34803863"
+      ],
+      "notes": [],
+      "photoIds": [
+        "1580560"
+      ]
+    },
+    "74511236": {
+      "id": "74511236",
+      "givn": "Роман",
+      "surn": "Атабаев",
+      "secg": "Бекдурдыевич",
+      "sex": "M",
+      "birthDate": "04.10.1989",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "28939728",
+        "58596671"
+      ],
+      "fams": [
+        "32761108"
+      ],
+      "famc": [
+        "34803863"
+      ],
+      "notes": [],
+      "photoIds": [
+        "28939728",
+        "58596671"
+      ]
+    },
+    "96418387": {
+      "id": "96418387",
+      "givn": "Милана",
+      "surn": "Атабаева",
+      "secg": "Романовна",
+      "sex": "F",
+      "birthDate": "08.01.2022",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "86777255"
+      ],
+      "fams": [],
+      "famc": [
+        "32761108"
+      ],
+      "notes": [],
+      "photoIds": [
+        "86777255"
+      ]
+    },
+    "55114784": {
+      "id": "55114784",
+      "givn": "Седа",
+      "surn": "Шахназарян",
+      "secg": "Атабековна",
+      "sex": "F",
+      "birthDate": "1932",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "14634668"
+      ],
+      "famc": [
+        "16163264"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "55908983": {
+      "id": "55908983",
+      "givn": "Владимир",
+      "surn": "Амбарцумян",
+      "secg": "Алексеевич",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "63040696"
+      ],
+      "famc": [
+        "82028378"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "19617824": {
+      "id": "19617824",
+      "givn": "Григорий",
+      "surn": "Абрамян",
+      "secg": "Эдуардович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "25874735"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "49323288": {
+      "id": "49323288",
+      "givn": "Альберт",
+      "surn": "Авакян",
+      "secg": "Гарегинович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "27446228"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "27844896": {
+      "id": "27844896",
+      "givn": "Арутюн",
+      "surn": "Амбарцумян",
+      "secg": "Атабекович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "33011449"
+      ],
+      "famc": [
+        "16163264"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "42179452": {
+      "id": "42179452",
+      "givn": "Александр",
+      "surn": "Амбарцумян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "44543568"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "86993582": {
+      "id": "86993582",
+      "givn": "Нора",
+      "surn": "Шахназарян",
+      "secg": "Хачатуровна",
+      "sex": "F",
+      "birthDate": "1959",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "14634668"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "10041101": {
+      "id": "10041101",
+      "givn": "Владик",
+      "surn": "Ишутин",
+      "secg": "Николаевич",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "67975978"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "12321088": {
+      "id": "12321088",
+      "givn": "Лариса",
+      "surn": "Амбарцумян",
+      "secg": "Арутюновна",
+      "sex": "F",
+      "birthDate": "1949",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "42340335"
+      ],
+      "famc": [
+        "33011449"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "66909702": {
+      "id": "66909702",
+      "givn": "Юрий",
+      "surn": "Амбарцумян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "42340335"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "97811656": {
+      "id": "97811656",
+      "givn": "Эмма",
+      "surn": "Амбарцумян",
+      "secg": "Арутюновна",
+      "sex": "F",
+      "birthDate": "1955",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "29373160"
+      ],
+      "famc": [
+        "33011449"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "79203058": {
+      "id": "79203058",
+      "givn": "Борис",
+      "surn": "Амбарцумян",
+      "secg": "Акопович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "95404512"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "69000512": {
+      "id": "69000512",
+      "givn": "Тамара",
+      "surn": "Мелкумян",
+      "secg": "Сергеевна",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "4147430"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "57070956": {
+      "id": "57070956",
+      "givn": "Рубен",
+      "surn": "Мелкумян",
+      "secg": "Погосович",
+      "sex": "M",
+      "birthDate": "03.10.1959",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "16247808"
+      ],
+      "notes": [
+        "57577328"
+      ],
+      "photoIds": []
+    },
+    "19486185": {
+      "id": "19486185",
+      "givn": "Лиана",
+      "surn": "Амбарцумян",
+      "secg": "Алексеевна",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "82028378"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "83297383": {
+      "id": "83297383",
+      "givn": "Атабек",
+      "surn": "Амбарцумян",
+      "secg": "Александрович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "16163264"
+      ],
+      "famc": [
+        "44543568"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "22233598": {
+      "id": "22233598",
+      "givn": "Мария",
+      "surn": "Мелкумян",
+      "secg": "Погосовна",
+      "sex": "F",
+      "birthDate": "29.01.1948",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "25874735"
+      ],
+      "famc": [
+        "16247808"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "73830656": {
+      "id": "73830656",
+      "givn": "Ирина",
+      "surn": "Амбарцумян",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "42340335"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "94622584": {
+      "id": "94622584",
+      "givn": "Ольга",
+      "surn": "Атабаева",
+      "secg": "Владиславовна",
+      "sex": "F",
+      "birthDate": "20.05.1997",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "72801512"
+      ],
+      "fams": [
+        "32761108"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": [
+        "72801512"
+      ]
+    },
+    "49346794": {
+      "id": "49346794",
+      "givn": "Тигран",
+      "surn": "Амбарцумян",
+      "secg": "Александрович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "44543568"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "32860762": {
+      "id": "32860762",
+      "givn": "Рубен",
+      "surn": "Мелкумян",
+      "secg": "Ашотович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "58030243"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "90846477": {
+      "id": "90846477",
+      "givn": "Ася",
+      "surn": "Амбарцумян",
+      "secg": "Арутюновна",
+      "sex": "F",
+      "birthDate": "1954",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "33011449"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "72527210": {
+      "id": "72527210",
+      "givn": "Адель",
+      "surn": "Атабаева",
+      "secg": "Павловна",
+      "sex": "F",
+      "birthDate": "23.08.2012",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "65202978"
+      ],
+      "fams": [],
+      "famc": [
+        "85029912"
+      ],
+      "notes": [],
+      "photoIds": [
+        "65202978"
+      ]
+    },
+    "96573066": {
+      "id": "96573066",
+      "givn": "Акоп",
+      "surn": "Амбарцумян",
+      "secg": "Александрович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "95404512"
+      ],
+      "famc": [
+        "44543568"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "54189144": {
+      "id": "54189144",
+      "givn": "Гурген",
+      "surn": "Абрамян",
+      "secg": "Эдуардрович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "25874735"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "29542141": {
+      "id": "29542141",
+      "givn": "Эмма",
+      "surn": "",
+      "secg": "Карапетовна",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "6890281"
+      ],
+      "famc": [],
+      "notes": [
+        "37886560"
+      ],
+      "photoIds": []
+    },
+    "59586745": {
+      "id": "59586745",
+      "givn": "Лилит",
+      "surn": "Амбарцумян",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "29373160"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "40350106": {
+      "id": "40350106",
+      "givn": "Мгер",
+      "surn": "Амбарцумян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "42340335"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "5980471": {
+      "id": "5980471",
+      "givn": "Кармена (Кармене)",
+      "surn": "Авакян",
+      "secg": "Гарегиновна",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "27446228"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "23775504": {
+      "id": "23775504",
+      "givn": "Давид",
+      "surn": "Мелкумян",
+      "secg": "Ашотович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "58030243"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "81372705": {
+      "id": "81372705",
+      "givn": "Елена",
+      "surn": "Мелкумян",
+      "secg": "Ашотовна",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "58030243"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "20676275": {
+      "id": "20676275",
+      "givn": "Павел",
+      "surn": "Авакян",
+      "secg": "Гарегинович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "27446228"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "93586400": {
+      "id": "93586400",
+      "givn": "Кнарик",
+      "surn": "Амбарцумян",
+      "secg": "Атурюновна",
+      "sex": "F",
+      "birthDate": "1950",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "58773920"
+      ],
+      "famc": [
+        "33011449"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "85573243": {
+      "id": "85573243",
+      "givn": "Марина",
+      "surn": "",
+      "secg": "Сергеевна",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "11811398"
+      ],
+      "fams": [
+        "64649544"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": [
+        "11811398"
+      ]
+    },
+    "83039296": {
+      "id": "83039296",
+      "givn": "Алексей",
+      "surn": "Амбарцумян",
+      "secg": "Акопович",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "82028378"
+      ],
+      "famc": [
+        "95404512"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "34093120": {
+      "id": "34093120",
+      "givn": "Соня",
+      "surn": "Амбарцумян",
+      "secg": "Атабековна",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "16163264"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "2643170": {
+      "id": "2643170",
+      "givn": "Арташес",
+      "surn": "Амбарцумян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "58773920"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "85487074": {
+      "id": "85487074",
+      "givn": "Андраник",
+      "surn": "Мелкумян",
+      "secg": "Сергеевич",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "4147430"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "69516384": {
+      "id": "69516384",
+      "givn": "Данил",
+      "surn": "Атабаев",
+      "secg": "Романович",
+      "sex": "M",
+      "birthDate": "29.10.2023",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "64397475"
+      ],
+      "fams": [],
+      "famc": [
+        "32761108"
+      ],
+      "notes": [],
+      "photoIds": [
+        "64397475"
+      ]
+    },
+    "62376057": {
+      "id": "62376057",
+      "givn": "Ася (Астхик)",
+      "surn": "Амбарцумян",
+      "secg": "Алексеевна",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "82028378"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "56325523": {
+      "id": "56325523",
+      "givn": "Нина",
+      "surn": "Авакян",
+      "secg": "Атабековна",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "27446228"
+      ],
+      "famc": [
+        "16163264"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "75328644": {
+      "id": "75328644",
+      "givn": "Римма",
+      "surn": "Мелкумян",
+      "secg": "Погосовна",
+      "sex": "F",
+      "birthDate": "08.11.1955",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "4147430"
+      ],
+      "famc": [
+        "16247808"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "96069736": {
+      "id": "96069736",
+      "givn": "Марго",
+      "surn": "Мелкумян",
+      "secg": "Атабековна",
+      "sex": "F",
+      "birthDate": "10.04.2028",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "16247808"
+      ],
+      "famc": [
+        "16163264"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "68879744": {
+      "id": "68879744",
+      "givn": "Ашот",
+      "surn": "Мелкумян",
+      "secg": "Погосович",
+      "sex": "M",
+      "birthDate": "29.08.1961",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "58030243"
+      ],
+      "famc": [
+        "16247808"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "34034269": {
+      "id": "34034269",
+      "givn": "Шаген",
+      "surn": "Шахназарян",
+      "secg": "Хачатурович",
+      "sex": "M",
+      "birthDate": "01.04.1955",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "14634668"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "86113461": {
+      "id": "86113461",
+      "givn": "Амаля",
+      "surn": "Амбарцумян",
+      "secg": "Арутюновна",
+      "sex": "F",
+      "birthDate": "1959",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "33011449"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "9898066": {
+      "id": "9898066",
+      "givn": "Лариса",
+      "surn": "Шахназарян",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "4539640"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "92886808": {
+      "id": "92886808",
+      "givn": "Марсель",
+      "surn": "Амбарцумян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "58773920"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "80255452": {
+      "id": "80255452",
+      "givn": "Сурик",
+      "surn": "Амбарцумян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "58773920"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "10794492": {
+      "id": "10794492",
+      "givn": "Гагик",
+      "surn": "Шахназарян",
+      "secg": "Хачатурович",
+      "sex": "M",
+      "birthDate": "08.03.1960",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "14634668"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "18809188": {
+      "id": "18809188",
+      "givn": "Вартуш",
+      "surn": "",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [
+        "75839580"
+      ],
+      "fams": [
+        "4194316"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": [
+        "75839580"
+      ]
+    },
+    "87931109": {
+      "id": "87931109",
+      "givn": "Соня",
+      "surn": "Амбарцумян",
+      "secg": "Владимировна",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "63040696"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "94554088": {
+      "id": "94554088",
+      "givn": "Гарегин",
+      "surn": "Погосович",
+      "secg": "Авакян",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "27446228"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "62167396": {
+      "id": "62167396",
+      "givn": "Погос",
+      "surn": "Мелкумян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "16247808"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "33387584": {
+      "id": "33387584",
+      "givn": "Амаяк",
+      "surn": "Манасян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "71192768"
+      ],
+      "famc": [
+        "92023680"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "72438016": {
+      "id": "72438016",
+      "givn": "Александр",
+      "surn": "Манасян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [],
+      "famc": [
+        "71192768"
+      ],
+      "notes": [],
+      "photoIds": []
+    },
+    "93108696": {
+      "id": "93108696",
+      "givn": "Иван",
+      "surn": "Манасян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "92023680"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "54318342": {
+      "id": "54318342",
+      "givn": "Оганес",
+      "surn": "Шахназарян",
+      "secg": "",
+      "sex": "M",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "44113198"
+      ],
+      "famc": [],
+      "notes": [
+        "71721687"
+      ],
+      "photoIds": []
+    },
+    "44679750": {
+      "id": "44679750",
+      "givn": "Соня",
+      "surn": "",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "64297752"
+      ],
+      "famc": [],
+      "notes": [],
+      "photoIds": []
+    },
+    "50125909": {
+      "id": "50125909",
+      "givn": "Ануш",
+      "surn": "Шахназарян",
+      "secg": "",
+      "sex": "F",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "residence": "",
+      "objes": [],
+      "fams": [
+        "92023680"
+      ],
+      "famc": [
+        "44113198"
+      ],
+      "notes": [],
+      "photoIds": []
+    }
+  },
+  "families": {
+    "9534490": {
+      "id": "9534490",
+      "husb": "82021480",
+      "wife": "70349824",
+      "chil": [
+        "56142782",
+        "35664204",
+        "3588684"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "96155866": {
+      "id": "96155866",
+      "husb": "53876568",
+      "wife": "35154288",
+      "chil": [
+        "78092024",
+        "27422228"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "51709192": {
+      "id": "51709192",
+      "husb": "27163974",
+      "wife": "35154288",
+      "chil": [
+        "96771916"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "7302831": {
+      "id": "7302831",
+      "husb": "",
+      "wife": "68737075",
+      "chil": [
+        "35154288"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "24710275": {
+      "id": "24710275",
+      "husb": "43938060",
+      "wife": "95770260",
+      "chil": [
+        "20148352",
+        "90399094"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "76273960": {
+      "id": "76273960",
+      "husb": "43938060",
+      "wife": "35454522",
+      "chil": [
+        "47907400",
+        "73540384",
+        "75475466"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "53829009": {
+      "id": "53829009",
+      "husb": "42972468",
+      "wife": "84381481",
+      "chil": [
+        "20621596",
+        "85475360",
+        "43938060"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "29192042": {
+      "id": "29192042",
+      "husb": "96771916",
+      "wife": "69986256",
+      "chil": [
+        "99433482",
+        "24177165"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "25974980": {
+      "id": "25974980",
+      "husb": "53511020",
+      "wife": "3588684",
+      "chil": [
+        "10844493",
+        "73250467"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "40477028": {
+      "id": "40477028",
+      "husb": "85475360",
+      "wife": "",
+      "chil": [
+        "32035536",
+        "23582576",
+        "20547520",
+        "19457188",
+        "33268808",
+        "31359092"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "51725101": {
+      "id": "51725101",
+      "husb": "62889966",
+      "wife": "98422829",
+      "chil": [],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "23556786": {
+      "id": "23556786",
+      "husb": "",
+      "wife": "20621596",
+      "chil": [
+        "62889966",
+        "59565798"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "41509918": {
+      "id": "41509918",
+      "husb": "",
+      "wife": "22410180",
+      "chil": [
+        "89317365"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "38341840": {
+      "id": "38341840",
+      "husb": "13356830",
+      "wife": "37845118",
+      "chil": [
+        "42972468"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "86511473": {
+      "id": "86511473",
+      "husb": "41058944",
+      "wife": "93189758",
+      "chil": [
+        "29415049",
+        "89331712",
+        "37845118"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "84697980": {
+      "id": "84697980",
+      "husb": "",
+      "wife": "27422228",
+      "chil": [
+        "31125007",
+        "22410180"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "58836476": {
+      "id": "58836476",
+      "husb": "78877471",
+      "wife": "78092024",
+      "chil": [
+        "7323016"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "8895756": {
+      "id": "8895756",
+      "husb": "41058944",
+      "wife": "",
+      "chil": [],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "86009712": {
+      "id": "86009712",
+      "husb": "44747289",
+      "wife": "",
+      "chil": [
+        "53876568"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "1220336": {
+      "id": "1220336",
+      "husb": "71843748",
+      "wife": "27484925",
+      "chil": [
+        "82021480",
+        "4234354",
+        "78877471"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "23923904": {
+      "id": "23923904",
+      "husb": "94250166",
+      "wife": "7323016",
+      "chil": [
+        "35454522",
+        "58119036"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "58260844": {
+      "id": "58260844",
+      "husb": "",
+      "wife": "10844493",
+      "chil": [
+        "18313492",
+        "13795668",
+        "95459514"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "13313343": {
+      "id": "13313343",
+      "husb": "71548844",
+      "wife": "58119036",
+      "chil": [],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "82987979": {
+      "id": "82987979",
+      "husb": "72367536",
+      "wife": "34925832",
+      "chil": [
+        "94250166",
+        "6951644"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "25048684": {
+      "id": "25048684",
+      "husb": "62071843",
+      "wife": "4234354",
+      "chil": [],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "46423144": {
+      "id": "46423144",
+      "husb": "",
+      "wife": "56142782",
+      "chil": [
+        "41852226"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "91104529": {
+      "id": "91104529",
+      "husb": "60925064",
+      "wife": "18353637",
+      "chil": [
+        "97731232",
+        "58668983",
+        "18527460",
+        "72367536",
+        "12799968"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "15457142": {
+      "id": "15457142",
+      "husb": "95547960",
+      "wife": "60995756",
+      "chil": [
+        "61558393",
+        "84381481",
+        "75406412"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "65858219": {
+      "id": "65858219",
+      "husb": "78203734",
+      "wife": "84043736",
+      "chil": [
+        "70426104",
+        "71447860",
+        "34925832"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "57003717": {
+      "id": "57003717",
+      "husb": "58277898",
+      "wife": "53910212",
+      "chil": [
+        "40277745",
+        "90537124",
+        "53691942",
+        "13356830",
+        "59405470",
+        "14799503"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "42156774": {
+      "id": "42156774",
+      "husb": "",
+      "wife": "",
+      "chil": [
+        "13356830"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "34803863": {
+      "id": "34803863",
+      "husb": "28891336",
+      "wife": "14799503",
+      "chil": [
+        "39635072",
+        "74511236"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "76254475": {
+      "id": "76254475",
+      "husb": "51639795",
+      "wife": "",
+      "chil": [
+        "80270776",
+        "60412864",
+        "26223903"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "67805611": {
+      "id": "67805611",
+      "husb": "78152620",
+      "wife": "90537124",
+      "chil": [
+        "95553766",
+        "57066128"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "4313512": {
+      "id": "4313512",
+      "husb": "86010266",
+      "wife": "",
+      "chil": [
+        "53528394"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "4194316": {
+      "id": "4194316",
+      "husb": "91820440",
+      "wife": "18809188",
+      "chil": [
+        "86010266",
+        "5851256",
+        "45638860"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "52497152": {
+      "id": "52497152",
+      "husb": "77124813",
+      "wife": "39165827",
+      "chil": [
+        "83747296"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "28538568": {
+      "id": "28538568",
+      "husb": "89331712",
+      "wife": "80233514",
+      "chil": [
+        "94452686",
+        "38074759",
+        "39165827"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "21018678": {
+      "id": "21018678",
+      "husb": "",
+      "wife": "69761500",
+      "chil": [
+        "42743584"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "9559046": {
+      "id": "9559046",
+      "husb": "12458440",
+      "wife": "29415049",
+      "chil": [
+        "7221376",
+        "69761500",
+        "97518144",
+        "18555833"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "15790966": {
+      "id": "15790966",
+      "husb": "37983399",
+      "wife": "75406412",
+      "chil": [
+        "69795034",
+        "28957872"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "5748130": {
+      "id": "5748130",
+      "husb": "7221376",
+      "wife": "50998676",
+      "chil": [
+        "9740114",
+        "15722944",
+        "95966552"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "64297752": {
+      "id": "64297752",
+      "husb": "2512327",
+      "wife": "44679750",
+      "chil": [],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "77561240": {
+      "id": "77561240",
+      "husb": "2512327",
+      "wife": "",
+      "chil": [
+        "91820440",
+        "5722333",
+        "58277898",
+        "93189758"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "44113198": {
+      "id": "44113198",
+      "husb": "54318342",
+      "wife": "",
+      "chil": [
+        "2512327",
+        "50125909"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "17993864": {
+      "id": "17993864",
+      "husb": "32293160",
+      "wife": "2684516",
+      "chil": [
+        "82451526",
+        "83653520"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "42441152": {
+      "id": "42441152",
+      "husb": "59111906",
+      "wife": "50751378",
+      "chil": [
+        "92672716",
+        "31727579",
+        "47169136"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "27851841": {
+      "id": "27851841",
+      "husb": "",
+      "wife": "60412864",
+      "chil": [
+        "59111906"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "57375686": {
+      "id": "57375686",
+      "husb": "82451526",
+      "wife": "15597008",
+      "chil": [
+        "68918744",
+        "70382396",
+        "85266456",
+        "51822574"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "35065972": {
+      "id": "35065972",
+      "husb": "92196944",
+      "wife": "88104585",
+      "chil": [
+        "14657656",
+        "62538359"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "59000509": {
+      "id": "59000509",
+      "husb": "71447860",
+      "wife": "89309780",
+      "chil": [
+        "31893944",
+        "16895184"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "50490888": {
+      "id": "50490888",
+      "husb": "57289736",
+      "wife": "",
+      "chil": [
+        "14170614",
+        "22716208"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "94930176": {
+      "id": "94930176",
+      "husb": "5775098",
+      "wife": "22831416",
+      "chil": [
+        "88104585",
+        "22002743"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "43041189": {
+      "id": "43041189",
+      "husb": "26223903",
+      "wife": "83653520",
+      "chil": [
+        "69380904",
+        "90520400",
+        "46519085",
+        "60995756",
+        "99093466",
+        "5775098"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "61773347": {
+      "id": "61773347",
+      "husb": "28263536",
+      "wife": "39337534",
+      "chil": [
+        "95547960"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "2327946": {
+      "id": "2327946",
+      "husb": "77963316",
+      "wife": "",
+      "chil": [
+        "39337534"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "75996768": {
+      "id": "75996768",
+      "husb": "69795034",
+      "wife": "",
+      "chil": [
+        "49400950"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "47051203": {
+      "id": "47051203",
+      "husb": "66528204",
+      "wife": "32309763",
+      "chil": [
+        "51201792",
+        "39120862"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "76581228": {
+      "id": "76581228",
+      "husb": "35461544",
+      "wife": "4188364",
+      "chil": [],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "45569597": {
+      "id": "45569597",
+      "husb": "90520400",
+      "wife": "99125432",
+      "chil": [
+        "70092152",
+        "4188364",
+        "57289736"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "45067962": {
+      "id": "45067962",
+      "husb": "",
+      "wife": "26367166",
+      "chil": [
+        "85093739"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "67975978": {
+      "id": "67975978",
+      "husb": "91743768",
+      "wife": "94563122",
+      "chil": [
+        "10041101",
+        "26367166"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "19741090": {
+      "id": "19741090",
+      "husb": "5722333",
+      "wife": "26137706",
+      "chil": [],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "96645563": {
+      "id": "96645563",
+      "husb": "68918744",
+      "wife": "33064456",
+      "chil": [],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "45178076": {
+      "id": "45178076",
+      "husb": "",
+      "wife": "22002743",
+      "chil": [
+        "38153312"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "31247216": {
+      "id": "31247216",
+      "husb": "",
+      "wife": "21290742",
+      "chil": [
+        "66528204",
+        "25184112"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "64649544": {
+      "id": "64649544",
+      "husb": "25184112",
+      "wife": "85573243",
+      "chil": [
+        "60419498"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "99699464": {
+      "id": "99699464",
+      "husb": "211211",
+      "wife": "",
+      "chil": [
+        "10301324",
+        "27934558",
+        "10425098",
+        "89685367",
+        "78203734"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "73338090": {
+      "id": "73338090",
+      "husb": "",
+      "wife": "53910212",
+      "chil": [],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "43097178": {
+      "id": "43097178",
+      "husb": "",
+      "wife": "53910212",
+      "chil": [],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "71060624": {
+      "id": "71060624",
+      "husb": "",
+      "wife": "53910212",
+      "chil": [],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "99212283": {
+      "id": "99212283",
+      "husb": "",
+      "wife": "53910212",
+      "chil": [],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "92646073": {
+      "id": "92646073",
+      "husb": "",
+      "wife": "53910212",
+      "chil": [],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "45802965": {
+      "id": "45802965",
+      "husb": "",
+      "wife": "53910212",
+      "chil": [],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "95606709": {
+      "id": "95606709",
+      "husb": "",
+      "wife": "53910212",
+      "chil": [],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "44543568": {
+      "id": "44543568",
+      "husb": "42179452",
+      "wife": "",
+      "chil": [
+        "96573066",
+        "83297383",
+        "49346794",
+        "53910212"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "4539640": {
+      "id": "4539640",
+      "husb": "59405470",
+      "wife": "",
+      "chil": [
+        "9898066",
+        "21290742"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "35068740": {
+      "id": "35068740",
+      "husb": "",
+      "wife": "40277745",
+      "chil": [
+        "26111441",
+        "90644016",
+        "40100648"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "71578338": {
+      "id": "71578338",
+      "husb": "91436958",
+      "wife": "83747296",
+      "chil": [
+        "48566228"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "74062392": {
+      "id": "74062392",
+      "husb": "10484156",
+      "wife": "97518144",
+      "chil": [
+        "46865148",
+        "29960540"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "47397742": {
+      "id": "47397742",
+      "husb": "43278824",
+      "wife": "25876188",
+      "chil": [
+        "84043736"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "59726481": {
+      "id": "59726481",
+      "husb": "53459639",
+      "wife": "53691942",
+      "chil": [
+        "94563122"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "37806336": {
+      "id": "37806336",
+      "husb": "28957872",
+      "wife": "",
+      "chil": [
+        "82112908"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "17094928": {
+      "id": "17094928",
+      "husb": "",
+      "wife": "99093466",
+      "chil": [
+        "22115358",
+        "79633492"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "63051374": {
+      "id": "63051374",
+      "husb": "90269543",
+      "wife": "14657656",
+      "chil": [
+        "59077724",
+        "72128064"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "68360380": {
+      "id": "68360380",
+      "husb": "",
+      "wife": "61558393",
+      "chil": [
+        "92989602"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "72515318": {
+      "id": "72515318",
+      "husb": "92989602",
+      "wife": "",
+      "chil": [
+        "61563936"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "69233133": {
+      "id": "69233133",
+      "husb": "62538359",
+      "wife": "",
+      "chil": [
+        "52966150"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "6890281": {
+      "id": "6890281",
+      "husb": "59405470",
+      "wife": "29542141",
+      "chil": [],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "5842345": {
+      "id": "5842345",
+      "husb": "",
+      "wife": "51822574",
+      "chil": [
+        "97838145",
+        "14883522",
+        "85828040"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "49311504": {
+      "id": "49311504",
+      "husb": "88607001",
+      "wife": "95966552",
+      "chil": [
+        "73191004"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "16825189": {
+      "id": "16825189",
+      "husb": "79896933",
+      "wife": "46865148",
+      "chil": [],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "12039456": {
+      "id": "12039456",
+      "husb": "72817202",
+      "wife": "15722944",
+      "chil": [],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "68356064": {
+      "id": "68356064",
+      "husb": "",
+      "wife": "25905925",
+      "chil": [
+        "56939593",
+        "45013758",
+        "69993876"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "2633656": {
+      "id": "2633656",
+      "husb": "27974232",
+      "wife": "18527460",
+      "chil": [
+        "59530368",
+        "38321359",
+        "74583576"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "13315562": {
+      "id": "13315562",
+      "husb": "78767740",
+      "wife": "93319936",
+      "chil": [
+        "96516677",
+        "30767836",
+        "66333039",
+        "34372319"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "30866526": {
+      "id": "30866526",
+      "husb": "46054880",
+      "wife": "25876188",
+      "chil": [
+        "9368319",
+        "25905925"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "56546858": {
+      "id": "56546858",
+      "husb": "",
+      "wife": "10301324",
+      "chil": [
+        "65170098"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "70383756": {
+      "id": "70383756",
+      "husb": "59530368",
+      "wife": "85962631",
+      "chil": [
+        "82196264",
+        "25538786"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "86023356": {
+      "id": "86023356",
+      "husb": "28841329",
+      "wife": "74583576",
+      "chil": [
+        "78767740"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "91913024": {
+      "id": "91913024",
+      "husb": "",
+      "wife": "26111441",
+      "chil": [
+        "48651313",
+        "9128884"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "35879148": {
+      "id": "35879148",
+      "husb": "",
+      "wife": "48651313",
+      "chil": [
+        "87615801",
+        "77956280"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "85029912": {
+      "id": "85029912",
+      "husb": "",
+      "wife": "39635072",
+      "chil": [
+        "72527210"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "32761108": {
+      "id": "32761108",
+      "husb": "74511236",
+      "wife": "94622584",
+      "chil": [
+        "96418387",
+        "69516384"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "14634668": {
+      "id": "14634668",
+      "husb": "",
+      "wife": "55114784",
+      "chil": [
+        "34034269",
+        "86993582",
+        "10794492"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "16163264": {
+      "id": "16163264",
+      "husb": "83297383",
+      "wife": "",
+      "chil": [
+        "27844896",
+        "56325523",
+        "34093120",
+        "55114784",
+        "96069736"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "63040696": {
+      "id": "63040696",
+      "husb": "55908983",
+      "wife": "",
+      "chil": [
+        "87931109"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "82028378": {
+      "id": "82028378",
+      "husb": "83039296",
+      "wife": "",
+      "chil": [
+        "62376057",
+        "55908983",
+        "19486185"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "25874735": {
+      "id": "25874735",
+      "husb": "",
+      "wife": "22233598",
+      "chil": [
+        "19617824",
+        "54189144"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "27446228": {
+      "id": "27446228",
+      "husb": "94554088",
+      "wife": "56325523",
+      "chil": [
+        "49323288",
+        "5980471",
+        "20676275"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "33011449": {
+      "id": "33011449",
+      "husb": "27844896",
+      "wife": "",
+      "chil": [
+        "12321088",
+        "93586400",
+        "90846477",
+        "97811656",
+        "86113461"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "42340335": {
+      "id": "42340335",
+      "husb": "",
+      "wife": "12321088",
+      "chil": [
+        "73830656",
+        "40350106",
+        "66909702"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "29373160": {
+      "id": "29373160",
+      "husb": "",
+      "wife": "97811656",
+      "chil": [
+        "59586745"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "95404512": {
+      "id": "95404512",
+      "husb": "96573066",
+      "wife": "",
+      "chil": [
+        "83039296",
+        "79203058"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "4147430": {
+      "id": "4147430",
+      "husb": "",
+      "wife": "75328644",
+      "chil": [
+        "85487074",
+        "69000512"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "16247808": {
+      "id": "16247808",
+      "husb": "62167396",
+      "wife": "96069736",
+      "chil": [
+        "22233598",
+        "75328644",
+        "57070956",
+        "68879744"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "58030243": {
+      "id": "58030243",
+      "husb": "68879744",
+      "wife": "",
+      "chil": [
+        "23775504",
+        "81372705",
+        "32860762"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "58773920": {
+      "id": "58773920",
+      "husb": "",
+      "wife": "93586400",
+      "chil": [
+        "2643170",
+        "92886808",
+        "80255452"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "71192768": {
+      "id": "71192768",
+      "husb": "33387584",
+      "wife": "",
+      "chil": [
+        "72438016"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    },
+    "92023680": {
+      "id": "92023680",
+      "husb": "93108696",
+      "wife": "50125909",
+      "chil": [
+        "33387584"
+      ],
+      "marriageDate": "",
+      "marriagePlace": ""
+    }
+  },
+  "notes": {
+    "18810380": {
+      "id": "18810380",
+      "text": "Живут в Кривой Балке. Саратовский район"
+    },
+    "77341578": {
+      "id": "77341578",
+      "text": "Живет в Тирасполе"
+    },
+    "59980912": {
+      "id": "59980912",
+      "text": "Работал начальником милиции в 30е годы? отравили в Киравобаде (Гянжа)"
+    },
+    "35820225": {
+      "id": "35820225",
+      "text": "Дома забодал бык. Жили в Одесской области, Саратский район, село Надежда"
+    },
+    "84732072": {
+      "id": "84732072",
+      "text": "В военные годы кассир в гастрономе"
+    },
+    "47242623": {
+      "id": "47242623",
+      "text": "Пропал без вести в Великой Отечественной войне. Бабушка Нина добилась того, чтоб в колхозе его признали умершим. Односельчане видели как его расстреляли. Воваел в Бессарабии и попал под бомбежку"
+    },
+    "91290984": {
+      "id": "91290984",
+      "text": "Для будущих исследования\nМангул Петр Иванович\nРодился в 1883 г., Полтавская обл.; украинец; образование начальное; б/п; единоличник.\nАрестован 1 августа 1930 г.\nПриговорен: , обв.: по ст. 58-8, 58-10, 58-11.\nПриговор: к лишению свободы на 5 лет Реабилитирован 28 апреля 1989 г.\nИсточник: Книга памяти Республики Башкортостан\nМангул Петр Иванович\nРодился в 1884 г., Украина; украинец; образование начальное; б/п; единоличник.\nАрестован 5 февраля 1930 г.\nПриговорен: , обв.: по ст. 58-10.\nПриговор: к лишению свободы на 5 лет Реабилитирован 28 августа 1989 г.\nИсточник: Книга памяти Республики Башкортостан\nМангул Федор Денисович\nРодился в 1876 г., Полтавская обл.; украинец; неграмотный; б/п; колхозник.\nАрестован 17 декабря 1937 г.\nПриговорен: , обв.: по ст. 58-9, 58-10, 58-11.\nПриговор: к лишению свободы на 10 лет Реабилитирован 1 ноября 1958 г.\nИсточник: Книга памяти Республики Башкортостан\n\nИсточник - http://forum.genoua.name/viewtopic.php?id=2230"
+    },
+    "95527070": {
+      "id": "95527070",
+      "text": "ходил в радио-кружок\nмечтал на корабле быть радистом\n\nс детства заикался\n\nпотом благодаря пению стал гораздо меньше"
+    },
+    "97993748": {
+      "id": "97993748",
+      "text": "Муж Иосиф Ласковский. Купили в Одессе на Фонтанке пол дома. От первого брака были дети у Иосифа. В браке с Татьяной детей не было"
+    },
+    "96032388": {
+      "id": "96032388",
+      "text": "работа учителем музыки 1976-1989 в Шамхоре\nработа на своих торговых точках (продукты, вещи) 1989-2000 в Кисловодске\nРабота на Вятском рынке, контейнер продуктовый с 2000-2004"
+    },
+    "7921329": {
+      "id": "7921329",
+      "text": "неофициально была жена Алсу"
+    },
+    "7133042": {
+      "id": "7133042",
+      "text": "был стеснительный, скромный в школе\n\nучился в 1й школе"
+    },
+    "15951570": {
+      "id": "15951570",
+      "text": "Купили на Фонтанке пол дома. От первого брака у Иосифа были дети. В браке с Татьяной детей не было"
+    },
+    "20824784": {
+      "id": "20824784",
+      "text": "жива, живет в Армении"
+    },
+    "76360853": {
+      "id": "76360853",
+      "text": "вышла замуж за картежника"
+    },
+    "11207794": {
+      "id": "11207794",
+      "text": "шила и продавала бюстгалтеры"
+    },
+    "51753366": {
+      "id": "51753366",
+      "text": "в армии был шофером и художником. Вызвал к себе Галю с Людой (дочкой). После службы родилась Света"
+    },
+    "73994048": {
+      "id": "73994048",
+      "text": "занимается боксом"
+    },
+    "42818828": {
+      "id": "42818828",
+      "text": "Основное занятие: тракторист-комбайнер\nДо армии был трактористом\nСлужил в Киеве в армии (тоже был трактористом)\nВ Оксанино послали укатывать катки для аэродрома\nДали квартиры служащим\nВлюбился в соседку (с двумя детьми Лена 1941 г.р. и Коля) Ефросинья (Полищук) 1924 г.р. (хорошо пела), женился в 20 лет на ней\nОстался в этом селе Оксанино\n\nВ браке детей не было\n"
+    },
+    "13558080": {
+      "id": "13558080",
+      "text": "домохозяйка"
+    },
+    "49136696": {
+      "id": "49136696",
+      "text": "служил в армии - Новый Афон"
+    },
+    "17187616": {
+      "id": "17187616",
+      "text": "умер в армии от прививки"
+    },
+    "80777715": {
+      "id": "80777715",
+      "text": "бухгалтер в социальной службе"
+    },
+    "72741155": {
+      "id": "72741155",
+      "text": "Бабушке Неле было 5 лет, когда развелись\nРазвелись из-за того, что нашел вдову помоложе, после войны гулял, приходил под утро\nБабушка Оксана выгнала по сути его\n\nУехал потом в Арбузинку, женился на женщине, которая работала вместе с бабушкой Оксаной\nБабушка забила на работе ее вилами. Суд оправдал ее\n\nВо втором браке родилась дочка Галя. Что-то с ней не так было.\n"
+    },
+    "89666981": {
+      "id": "89666981",
+      "text": "домохозяйка - родственница с маршалом Баграмяном"
+    },
+    "36364625": {
+      "id": "36364625",
+      "text": "училась в Дилижане"
+    },
+    "57444608": {
+      "id": "57444608",
+      "text": "два брака"
+    },
+    "63917056": {
+      "id": "63917056",
+      "text": "У предков была фамилия Азгельдян"
+    },
+    "18336368": {
+      "id": "18336368",
+      "text": ""
+    },
+    "95737392": {
+      "id": "95737392",
+      "text": "умер от приступа эпилепсии"
+    },
+    "37962096": {
+      "id": "37962096",
+      "text": "работал в колхозе\nв последнее время на вин заводе\nпотом сторожем на ЖД вокзале\n\nиспугался, когда что-то украли при его смене и появилась эпилепсия\n\nочень был религиозный\nчитал Евангелие\nБабушка Неля нашла его у колодца мертвым"
+    },
+    "92941414": {
+      "id": "92941414",
+      "text": "Крит фамилия на украинском\n02.05 рождение по старому стилю\n\nКогда бабушке Неле было 2 года, они скрывались с бабушкой Оксаной в подвале соседа. Когда начали бомбить, бабушка с ребенком на руках спала, осталась одна в подвале, проснулась и очень испугалась, кольнуло сердце\n\nПотом, когда дети были маленькие, заработала воспаление легких\nВсю жизнь был хронический бронхит\nПотом кашляла всю жизнь\n"
+    },
+    "74579635": {
+      "id": "74579635",
+      "text": "водитель (самый младший)"
+    },
+    "46811640": {
+      "id": "46811640",
+      "text": "Во время войны без вести пропал\n\nПотом нашли могилу в Краснодарском крае (следопыты пионеры) в 1971"
+    },
+    "99775516": {
+      "id": "99775516",
+      "text": "педагог музыки в музыкальной школе"
+    },
+    "20303776": {
+      "id": "20303776",
+      "text": "Сашин дедушка\n"
+    },
+    "25352182": {
+      "id": "25352182",
+      "text": "ушла из дома в 18 лет"
+    },
+    "19904442": {
+      "id": "19904442",
+      "text": "домохозяйка"
+    },
+    "14269082": {
+      "id": "14269082",
+      "text": "два брака"
+    },
+    "25996081": {
+      "id": "25996081",
+      "text": "был художником, в Чардахлах был в доме культуре."
+    },
+    "63378576": {
+      "id": "63378576",
+      "text": "В военные годы кассир в гастрономе\nКассир\nТорговала"
+    },
+    "91240757": {
+      "id": "91240757",
+      "text": "в Киравобаде работал в автобазе начальником автоколонным, начальником гражданской обороны"
+    },
+    "13337682": {
+      "id": "13337682",
+      "text": "Родился в августе 1939\nСлужил в армии\nЖенился в 18 лет (жена Галя)\nДве дочки - Люда (1959 г.р.) и Света (младше)\nРазвелся\nПотом жил в Вознесенске\nЖенился во второй раз. И с ней тоже разошелся\n"
+    },
+    "93512028": {
+      "id": "93512028",
+      "text": "учился в летной школе в Подмосковье"
+    },
+    "94090546": {
+      "id": "94090546",
+      "text": "механик в завхозе, учился с маршалом Бабаджаняном"
+    },
+    "24796866": {
+      "id": "24796866",
+      "text": "служил в Морфлоте. жил в Риге, там получил квартиру\n\nработал водителем городского автобуса"
+    },
+    "81115520": {
+      "id": "81115520",
+      "text": "две дочки"
+    },
+    "84583092": {
+      "id": "84583092",
+      "text": "жил в Казахстане"
+    },
+    "79183360": {
+      "id": "79183360",
+      "text": "жила в Арбузинке\n\nбабушка Неля ходила часто с ней в церковь"
+    },
+    "85514400": {
+      "id": "85514400",
+      "text": ""
+    },
+    "41202139": {
+      "id": "41202139",
+      "text": "умерла от испуга при взрыве цистерны"
+    },
+    "17270017": {
+      "id": "17270017",
+      "text": "погиб на войне"
+    },
+    "13921848": {
+      "id": "13921848",
+      "text": "умер в молодости"
+    },
+    "79113654": {
+      "id": "79113654",
+      "text": "До 2й мировой войны была Румыния\n\nВладели землей 5 ГА земли, были лошади\nпрокармливали так семью\n\nПосле войны муж сдал все в колхоз (землю, инвентарь, лошадь)."
+    },
+    "99356221": {
+      "id": "99356221",
+      "text": "пропала, когда была голодавка"
+    },
+    "38249300": {
+      "id": "38249300",
+      "text": "вышла замуж"
+    },
+    "62608717": {
+      "id": "62608717",
+      "text": "болеет"
+    },
+    "37130924": {
+      "id": "37130924",
+      "text": "жили в Одессе. Продали кваритру и переехали в Ереван\n\nВышла замуж"
+    },
+    "57577328": {
+      "id": "57577328",
+      "text": "утонул"
+    },
+    "37886560": {
+      "id": "37886560",
+      "text": "была дочь Римма Сергеевна Якушина"
+    },
+    "71721687": {
+      "id": "71721687",
+      "text": "был священником, поэтому род был Терацу (священный)"
+    }
+  }
+}
