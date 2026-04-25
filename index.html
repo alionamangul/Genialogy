@@ -1204,6 +1204,132 @@ textarea.panel-field { resize: vertical; min-height: 60px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--brown); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--brown-light); }
+
+/* ============================================================
+   MOBILE RESPONSIVE — max-width: 768px
+   ============================================================ */
+@media (max-width: 768px) {
+
+  /* Header: stack title row + scrollable tabs in two rows */
+  .header {
+    flex-wrap: wrap;
+    padding: 8px 12px 0;
+    gap: 6px;
+    height: auto;
+  }
+  .header h1 { font-size: 15px; }
+  .search-box { max-width: none; flex: 1; min-width: 0; }
+  .view-tabs {
+    order: 10; /* push tabs to second row */
+    width: 100%;
+    margin-left: 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 6px;
+    flex-wrap: nowrap;
+    gap: 4px;
+  }
+  .view-tabs::-webkit-scrollbar { display: none; }
+  .view-tab { flex-shrink: 0; padding: 5px 12px; font-size: 12px; }
+
+  /* Push all fixed containers below the taller mobile header */
+  #tree-container,
+  #list-container,
+  .page-container {
+    top: 88px; /* header height with two rows */
+  }
+
+  /* Side panel: full screen on mobile, slides in from right */
+  .side-panel {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid var(--border);
+    z-index: 200;
+    padding: 16px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+  .side-panel.open { transform: translateX(0); right: 0; }
+  .panel-close {
+    top: 10px; right: 10px;
+    font-size: 24px; width: 36px; height: 36px;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--bg3); border-radius: 50%;
+  }
+  .panel-name { font-size: 17px; }
+  .panel-avatar { width: 90px; height: 90px; }
+  .panel-avatar .initials { font-size: 26px; }
+
+  /* Page containers */
+  .page-container { padding: 16px 14px; }
+
+  /* Tree nodes — smaller for mobile */
+  .tree-node { width: 72px; }
+  .node-photo { width: 54px; height: 54px; }
+  .node-photo .initials { font-size: 15px; }
+  .node-name { font-size: 9px; }
+  .node-dates { font-size: 8.5px; }
+
+  /* Zoom controls: bigger tap targets, nudge up */
+  .zoom-controls { bottom: 16px; right: 12px; gap: 6px; }
+  .zoom-btn { width: 44px; height: 44px; font-size: 20px; border-radius: 10px; }
+
+  /* "Всё дерево" button */
+  .back-to-overview { bottom: 16px; left: 12px; font-size: 12px; padding: 10px 14px; }
+
+  /* List view */
+  .person-list { grid-template-columns: 1fr; }
+  .list-filter { flex-direction: column; align-items: stretch; }
+  .list-filter input { max-width: none; }
+
+  /* Gallery grids */
+  .gallery-person-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; }
+  .gallery-person-card { font-size: 11px !important; }
+  .media-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .docs-grid { grid-template-columns: repeat(2, 1fr) !important; }
+
+  /* History / facts */
+  .facts-grid, .history-grid { grid-template-columns: 1fr !important; }
+  .history-entry { flex-direction: column; gap: 6px !important; }
+  .history-year { min-width: auto !important; }
+
+  /* Book viewer */
+  .book-viewer-title { font-size: 13px !important; top: 8px !important; }
+  .book-covers { gap: 16px !important; flex-direction: column !important; align-items: center !important; }
+  .book-cover { width: 140px !important; height: 196px !important; }
+  .book-stage { width: 99vw !important; height: 62vh !important; }
+  .book-spread { gap: 0 !important; }
+  .book-page-left { border-radius: 4px 0 0 4px !important; }
+  .book-page-right { border-radius: 0 4px 4px 0 !important; }
+  .book-page-content { padding: 10px 8px !important; font-size: 10px !important; line-height: 1.4 !important; }
+  .book-page-content h2 { font-size: 13px !important; }
+  .book-page-content h3 { font-size: 11px !important; }
+  .book-photo-grid { grid-template-columns: 1fr !important; gap: 4px !important; }
+  .book-nav { gap: 16px !important; }
+  .book-nav-btn { width: 44px !important; height: 44px !important; font-size: 22px !important; }
+
+  /* Doc upload modal */
+  .doc-upload-box { width: 92vw !important; padding: 20px 16px !important; }
+
+  /* Lightbox */
+  .lightbox img { max-width: 98%; max-height: 85%; }
+
+  /* Geography: map container */
+  #geo-map { height: 250px !important; }
+}
+
+/* Extra small: phones under 400px */
+@media (max-width: 400px) {
+  .header h1 { font-size: 13px; }
+  .view-tab { padding: 4px 10px; font-size: 11px; }
+  .tree-node { width: 62px; }
+  .node-photo { width: 46px; height: 46px; }
+  .node-name { font-size: 8px; }
+}
 </style>
 </head>
 <body>
@@ -3228,9 +3354,15 @@ function zoomToFocusPerson(personId) {
   scale = Math.min(fitScaleH, fitScaleV, 0.85);
   scale = Math.max(0.25, scale);
 
-  // Center the full tree horizontally; place couple row at 65% down
+  // Center the full tree horizontally
   panX = (rect.width - treeW * scale) / 2 - minX * scale + 50 * scale;
-  panY = rect.height * 0.65 - (focusPos.y + NODE_H / 2) * scale;
+  // On narrow screens (scale at minimum), center tree vertically;
+  // on wider screens place focus person at 65% down for comfortable viewing
+  if (scale <= 0.26) {
+    panY = (rect.height - treeH * scale) / 2 - minY * scale + 50 * scale;
+  } else {
+    panY = rect.height * 0.65 - (focusPos.y + NODE_H / 2) * scale;
+  }
 
   updateTransform();
 }
@@ -4713,6 +4845,23 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') bookFlip(-1);
   if (e.key === 'Escape') closeBook();
 });
+
+// Touch swipe for book viewer
+(function() {
+  let bTouchStartX = 0, bTouchStartY = 0;
+  const bv = document.getElementById('book-viewer');
+  bv.addEventListener('touchstart', e => {
+    bTouchStartX = e.touches[0].clientX;
+    bTouchStartY = e.touches[0].clientY;
+  }, { passive: true });
+  bv.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - bTouchStartX;
+    const dy = e.changedTouches[0].clientY - bTouchStartY;
+    if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
+      bookFlip(dx < 0 ? 1 : -1);
+    }
+  }, { passive: true });
+})();
 
 // ============ GEOGRAPHY ============
 let geoMap = null;
