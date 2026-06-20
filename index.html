@@ -1616,7 +1616,7 @@ textarea.panel-field { resize: vertical; min-height: 60px; }
       <div class="doc-upload-dropzone" id="dum-dropzone" onclick="document.getElementById('dum-file-input').click()">
         Нажмите или перетащите файлы сюда<br><small>JPG, PNG, PDF, WebP</small>
       </div>
-      <input type="file" id="dum-file-input" accept="image/*,.pdf" multiple style="display:none">
+      <input type="file" id="dum-file-input" accept="image/*,.pdf,application/pdf" multiple style="display:none">
       <div class="doc-upload-preview" id="dum-preview"></div>
     </div>
     <div class="doc-upload-log" id="dum-log"></div>
@@ -3744,7 +3744,30 @@ function centerOnNode(id) {
 }
 
 // ============ SIDE PANEL ============
+
+// Debounced auto-save for panel fields (fires 800ms after last keystroke)
+let _saveTimer = null;
+function scheduleFieldSave(id, field, value) {
+  clearTimeout(_saveTimer);
+  _saveTimer = setTimeout(() => saveField(id, field, value), 800);
+}
+
+// Force-save all currently visible panel fields immediately (called on panel close)
+async function flushPanelFields() {
+  const panel = document.getElementById('panel-content');
+  if (!panel) return;
+  const fields = panel.querySelectorAll('[data-save-id]');
+  const promises = [];
+  for (const el of fields) {
+    const pid = el.dataset.saveId;
+    const field = el.dataset.saveField;
+    if (pid && field) promises.push(saveField(pid, field, el.value));
+  }
+  await Promise.all(promises);
+}
+
 function closePanel() {
+  flushPanelFields();
   document.getElementById('side-panel').classList.remove('open');
   selectedId = null;
   document.querySelectorAll('.tree-node.selected').forEach(n => n.classList.remove('selected'));
@@ -3806,20 +3829,23 @@ function selectPerson(id) {
 
   const esc = v => (v||'').replace(/"/g,'&quot;');
 
+  // Helper: field attributes with both oninput (debounced) and onblur (immediate)
+  const fld = (field) => `data-save-id="${id}" data-save-field="${field}" oninput="scheduleFieldSave('${id}','${field}',this.value)" onblur="saveField('${id}','${field}',this.value)"`;
+
   // Editable name fields
   html += `<div class="panel-section">
     <div class="panel-section-title">Фамилия / Имя / Отчество</div>
-    <input class="panel-field" value="${esc(p.surn)}" placeholder="Фамилия" onblur="saveField('${id}','surn',this.value)">
+    <input class="panel-field" value="${esc(p.surn)}" placeholder="Фамилия" ${fld('surn')}>
     <div class="panel-field-row">
-      <input class="panel-field" value="${esc(p.givn)}" placeholder="Имя" onblur="saveField('${id}','givn',this.value)">
-      <input class="panel-field" value="${esc(p.secg)}" placeholder="Отчество" onblur="saveField('${id}','secg',this.value)">
+      <input class="panel-field" value="${esc(p.givn)}" placeholder="Имя" ${fld('givn')}>
+      <input class="panel-field" value="${esc(p.secg)}" placeholder="Отчество" ${fld('secg')}>
     </div>
   </div>`;
 
   // Sex
   html += `<div class="panel-section">
     <div class="panel-section-title">Пол</div>
-    <select class="panel-field" onchange="saveField('${id}','sex',this.value)">
+    <select class="panel-field" data-save-id="${id}" data-save-field="sex" onchange="saveField('${id}','sex',this.value)">
       <option value="M" ${p.sex==='M'?'selected':''}>Мужской</option>
       <option value="F" ${p.sex==='F'?'selected':''}>Женский</option>
     </select>
@@ -3829,37 +3855,37 @@ function selectPerson(id) {
   html += `<div class="panel-section">
     <div class="panel-section-title">Рождение</div>
     <div class="panel-field-row">
-      <input class="panel-field" value="${esc(p.birthDate)}" placeholder="Дата" onblur="saveField('${id}','birthDate',this.value)">
+      <input class="panel-field" value="${esc(p.birthDate)}" placeholder="Дата" ${fld('birthDate')}>
     </div>
-    <input class="panel-field" value="${esc(p.birthPlace)}" placeholder="Место рождения" onblur="saveField('${id}','birthPlace',this.value)">
+    <input class="panel-field" value="${esc(p.birthPlace)}" placeholder="Место рождения" ${fld('birthPlace')}>
   </div>`;
 
   // Death
   html += `<div class="panel-section">
     <div class="panel-section-title">Смерть</div>
     <div class="panel-field-row">
-      <input class="panel-field" value="${esc(p.deathDate)}" placeholder="Дата" onblur="saveField('${id}','deathDate',this.value)">
+      <input class="panel-field" value="${esc(p.deathDate)}" placeholder="Дата" ${fld('deathDate')}>
     </div>
-    <input class="panel-field" value="${esc(p.deathPlace)}" placeholder="Место смерти" onblur="saveField('${id}','deathPlace',this.value)">
+    <input class="panel-field" value="${esc(p.deathPlace)}" placeholder="Место смерти" ${fld('deathPlace')}>
   </div>`;
 
   // Residence
   html += `<div class="panel-section">
     <div class="panel-section-title">Место жительства</div>
-    <input class="panel-field" value="${esc(p.residence)}" placeholder="—" onblur="saveField('${id}','residence',this.value)">
+    <input class="panel-field" value="${esc(p.residence)}" placeholder="—" ${fld('residence')}>
   </div>`;
 
   // Occupation
   html += `<div class="panel-section">
     <div class="panel-section-title">Профессия</div>
-    <input class="panel-field" value="${esc(p.occupation)}" placeholder="—" onblur="saveField('${id}','occupation',this.value)">
+    <input class="panel-field" value="${esc(p.occupation)}" placeholder="—" ${fld('occupation')}>
   </div>`;
 
   // Notes
   const noteTexts = (p.notes||[]).map(nid => DATA.notes?.[nid]).filter(n => n && n.text).map(n => n.text);
   html += `<div class="panel-section">
     <div class="panel-section-title">Заметки</div>
-    <textarea class="panel-field" rows="3" placeholder="—" onblur="saveField('${id}','_noteText',this.value)">${(noteTexts.join('\n')||'')}</textarea>
+    <textarea class="panel-field" rows="3" placeholder="—" data-save-id="${id}" data-save-field="_noteText" oninput="scheduleFieldSave('${id}','_noteText',this.value)" onblur="saveField('${id}','_noteText',this.value)">${(noteTexts.join('\n')||'')}</textarea>
   </div>`;
 
   // Documents
@@ -4414,8 +4440,11 @@ async function dumUpload() {
 
 // ============ BOOK ============
 let bookCurrentSpread = 0;
+let bookCurrentPage = 0;   // single-page index for mobile
 let bookPages = [];
 let bookFlipping = false;
+
+function isMobile() { return window.innerWidth < 768; }
 
 // SVG background tree (bare oak-like silhouette)
 const BG_TREE_SVG = `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;opacity:1;">
@@ -4737,9 +4766,22 @@ function buildBookPhotosHtml(ids) {
 function openBook(bookId) {
   bookPages = buildBookPages(bookId);
   bookCurrentSpread = 0;
+  bookCurrentPage = 0;
   bookFlipping = false;
   const title = bookId === 'shahna' ? 'Родословная семейства Шахназарян' : 'Родословная семейства Курудимовых / Мангул';
   document.getElementById('book-viewer-title').textContent = title;
+  // Apply mobile layout adjustments
+  const lp = document.getElementById('book-page-left');
+  const rp = document.getElementById('book-page-right');
+  if (isMobile()) {
+    lp.style.display = 'none';
+    rp.style.width = '100%';
+    rp.style.borderRadius = '6px';
+  } else {
+    lp.style.display = '';
+    rp.style.width = '';
+    rp.style.borderRadius = '';
+  }
   renderBookSpread();
   document.getElementById('book-viewer').classList.add('open');
 }
@@ -4749,21 +4791,52 @@ function closeBook() {
 }
 
 function renderBookSpread() {
-  const spread = bookPages[bookCurrentSpread];
-  if (!spread) return;
-  document.getElementById('book-left-content').innerHTML = spread.left;
-  document.getElementById('book-right-content').innerHTML = spread.right;
-  const leftNum = bookCurrentSpread * 2 + 1;
-  const rightNum = bookCurrentSpread * 2 + 2;
-  document.getElementById('book-left-num').textContent = leftNum;
-  document.getElementById('book-right-num').textContent = rightNum;
-  document.getElementById('book-prev').disabled = bookCurrentSpread === 0;
-  document.getElementById('book-next').disabled = bookCurrentSpread === bookPages.length - 1;
-  document.getElementById('book-nav-info').textContent = `${leftNum}–${rightNum} / ${bookPages.length * 2}`;
+  const totalPages = bookPages.length * 2;
+  if (isMobile()) {
+    // Single-page mode on mobile
+    const spreadIdx = Math.floor(bookCurrentPage / 2);
+    const isRight = bookCurrentPage % 2 === 1;
+    const spread = bookPages[spreadIdx];
+    if (!spread) return;
+    document.getElementById('book-right-content').innerHTML = isRight ? spread.right : spread.left;
+    document.getElementById('book-right-num').textContent = bookCurrentPage + 1;
+    document.getElementById('book-prev').disabled = bookCurrentPage === 0;
+    document.getElementById('book-next').disabled = bookCurrentPage === totalPages - 1;
+    document.getElementById('book-nav-info').textContent = `стр. ${bookCurrentPage + 1} / ${totalPages}`;
+  } else {
+    const spread = bookPages[bookCurrentSpread];
+    if (!spread) return;
+    document.getElementById('book-left-content').innerHTML = spread.left;
+    document.getElementById('book-right-content').innerHTML = spread.right;
+    const leftNum = bookCurrentSpread * 2 + 1;
+    const rightNum = bookCurrentSpread * 2 + 2;
+    document.getElementById('book-left-num').textContent = leftNum;
+    document.getElementById('book-right-num').textContent = rightNum;
+    document.getElementById('book-prev').disabled = bookCurrentSpread === 0;
+    document.getElementById('book-next').disabled = bookCurrentSpread === bookPages.length - 1;
+    document.getElementById('book-nav-info').textContent = `${leftNum}–${rightNum} / ${totalPages}`;
+  }
 }
 
 function bookFlip(dir) {
   if (bookFlipping) return;
+
+  if (isMobile()) {
+    // Single-page flip on mobile — simple fade/slide, no 3D
+    const totalPages = bookPages.length * 2;
+    const next = bookCurrentPage + dir;
+    if (next < 0 || next >= totalPages) return;
+    const rp = document.getElementById('book-page-right');
+    rp.style.transition = 'opacity 0.2s';
+    rp.style.opacity = '0';
+    setTimeout(() => {
+      bookCurrentPage = next;
+      renderBookSpread();
+      rp.style.opacity = '1';
+    }, 200);
+    return;
+  }
+
   const next = bookCurrentSpread + dir;
   if (next < 0 || next >= bookPages.length) return;
   bookFlipping = true;
@@ -5153,8 +5226,13 @@ function triggerUpload(personId) {
   input.type = 'file';
   input.accept = 'image/*';
   input.multiple = true;
+  input.style.position = 'fixed';
+  input.style.opacity = '0';
+  input.style.top = '-100px';
+  document.body.appendChild(input);
   input.onchange = () => {
     const files = Array.from(input.files);
+    document.body.removeChild(input);
     if (!files.length) return;
     uploadPhotos(personId, files);
   };
