@@ -1,0 +1,8 @@
+{
+  "name": "genialogy-api",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@vercel/blob": "2.4.1"
+  }
+}

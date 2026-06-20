@@ -1959,8 +1959,17 @@ const DEFAULT_ROOT_ID = '43938060';
 
 async function init() {
   try {
-    const resp = await fetch('./data.json');
-    DATA = await resp.json();
+    // Сначала пробуем актуальные данные из Blob (/api/data),
+    // при отсутствии/ошибке — исходный data.json из репозитория.
+    let loaded = false;
+    try {
+      const r = await fetch('/api/data', { cache: 'no-store' });
+      if (r.ok) { DATA = await r.json(); loaded = true; }
+    } catch(_) { /* нет бэкенда — пойдём на статику */ }
+    if (!loaded) {
+      const resp = await fetch('./data.json?ts=' + Date.now());
+      DATA = await resp.json();
+    }
   } catch(e) {
     document.body.innerHTML = '<div style="padding:40px;color:#c9a84c;font-size:18px;">Ошибка загрузки data.json. Запустите через локальный сервер: npx serve .</div>';
     return;
@@ -4423,11 +4432,11 @@ async function dumUpload() {
     const { file } = _dumFiles[i];
     const title = customTitle || ((_dumFiles.length > 1) ? `${docType} (стр. ${i + 1})` : docType);
     try {
-      const formData = new FormData();
-      formData.append('doc', file);
-      formData.append('filename', file.name);
-      formData.append('title', title);
-      const res = await fetch(`/api/upload-doc?personId=${personId}`, { method: 'POST', body: formData });
+      const res = await fetch(`/api/upload-doc?personId=${encodeURIComponent(personId)}&filename=${encodeURIComponent(file.name || 'doc.jpg')}&title=${encodeURIComponent(title)}`, {
+        method: 'POST',
+        headers: { 'Content-Type': file.type || 'application/octet-stream' },
+        body: file,
+      });
       if (!res.ok) throw new Error(await res.text());
       const j = await res.json();
       const fileRef = j.url || j.filename;
@@ -5284,12 +5293,10 @@ async function uploadPhotos(personId, files) {
       if (file.type.startsWith('image/') && file.size > 800000) {
         file = await compressImage(file);
       }
-      const formData = new FormData();
-      formData.append('photo', file);
-      formData.append('filename', file.name);
-      const res = await fetch(`/api/upload-photo?personId=${personId}`, {
+      const res = await fetch(`/api/upload-photo?personId=${encodeURIComponent(personId)}&filename=${encodeURIComponent(file.name || 'photo.jpg')}`, {
         method: 'POST',
-        body: formData,
+        headers: { 'Content-Type': file.type || 'image/jpeg' },
+        body: file,
       });
       if (!res.ok) throw new Error(await res.text());
       const j = await res.json();

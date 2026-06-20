@@ -6,10 +6,9 @@ Serves static files + handles photo/doc uploads and data saves.
 import http.server
 import json
 import os
-import re
 import time
-import cgi
 import shutil
+from urllib.parse import unquote
 
 BASE_DIR  = '/Users/alyona/Downloads/family-tree'  # permanent storage (may be read-only from sandbox)
 SERVE_DIR = '/tmp/family-tree'                      # served to browser, always writable
@@ -91,29 +90,27 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(body)
 
-    def _parse_multipart(self):
-        ctype, pdict = cgi.parse_header(self.headers.get('Content-Type', ''))
-        if 'boundary' in pdict:
-            pdict['boundary'] = pdict['boundary'].encode('utf-8')
-        pdict['CONTENT-LENGTH'] = int(self.headers.get('Content-Length', 0))
-        return cgi.parse_multipart(self.rfile, pdict)
-
     def _parse_qs(self):
         qs = self.path.split('?', 1)[1] if '?' in self.path else ''
-        return dict(p.split('=', 1) for p in qs.split('&') if '=' in p)
+        out = {}
+        for p in qs.split('&'):
+            if '=' in p:
+                k, v = p.split('=', 1)
+                out[k] = unquote(v)
+        return out
+
+    def _read_body(self):
+        length = int(self.headers.get('Content-Length', 0))
+        return self.rfile.read(length) if length else b''
 
     def _handle_upload(self):
         try:
             params = self._parse_qs()
             person_id = params.get('personId', '')
-            form = self._parse_multipart()
+            orig_name = params.get('filename', 'photo.jpg')
 
-            file_data = form.get('photo', [None])[0]
-            orig_name = form.get('filename', [b'photo.jpg'])[0]
-            if isinstance(orig_name, bytes):
-                orig_name = orig_name.decode('utf-8', errors='replace')
-
-            if not file_data:
+            file_bytes = self._read_body()
+            if not file_bytes:
                 self._json_response({'error': 'no file'}, 400)
                 return
 
@@ -123,9 +120,10 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
             photo_id = str(int(time.time() * 1000) % 100000000)
             filename = photo_id + ext
-            file_bytes = file_data if isinstance(file_data, bytes) else file_data.encode('latin-1')
             save_media_file(os.path.join('media', filename), file_bytes)
 
+            # Локально храним «голый» id — photoUrl() сам достроит ./media/<id>.jpg.
+            # (на проде функция возвращает полный Blob URL, который photoUrl пропускает как есть)
             if person_id:
                 data = load_data()
                 p = data.get('individuals', {}).get(person_id)
@@ -144,17 +142,11 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         try:
             params = self._parse_qs()
             person_id = params.get('personId', '')
-            form = self._parse_multipart()
+            orig_name = params.get('filename', 'doc.jpg')
+            doc_title = params.get('title', '')
 
-            file_data = form.get('doc', [None])[0]
-            orig_name = form.get('filename', [b'doc.jpg'])[0]
-            doc_title = form.get('title', [b''])[0]
-            if isinstance(orig_name, bytes):
-                orig_name = orig_name.decode('utf-8', errors='replace')
-            if isinstance(doc_title, bytes):
-                doc_title = doc_title.decode('utf-8', errors='replace')
-
-            if not file_data:
+            file_bytes = self._read_body()
+            if not file_bytes:
                 self._json_response({'error': 'no file'}, 400)
                 return
 
@@ -164,9 +156,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
             file_id = str(int(time.time() * 1000) % 100000000)
             filename = file_id + ext
-            file_bytes = file_data if isinstance(file_data, bytes) else file_data.encode('latin-1')
             save_media_file(os.path.join('media', 'docs', filename), file_bytes)
 
+            # Локально храним имя файла — docUrl() достроит ./media/docs/<filename>.
             if person_id:
                 data = load_data()
                 p = data.get('individuals', {}).get(person_id)
@@ -176,7 +168,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                     p['documents'].append({'file': filename, 'title': doc_title or orig_name})
                     save_data(data)
 
-            self._json_response({'fileId': file_id, 'filename': filename})
+            self._json_response({'filename': filename})
 
         except Exception as e:
             self._json_response({'error': str(e)}, 500)

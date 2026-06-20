@@ -37,13 +37,14 @@
 - Сохранение данных пишет в `/tmp/family-tree/data.json` и пытается продублировать в `~/Downloads`.
 
 ### 2. Прод (Vercel)
-- Статика (`index.html`, `media/`) отдаётся как есть.
-- Редактирование работает через `api/*.py`:
-  - `update-data.py` — сохраняет `data.json` в GitHub через GitHub API.
-  - `upload-photo.py` / `upload-doc.py` — заливают файл в **Vercel Blob**, а ссылку дописывают в `data.json`.
-- Для работы нужны переменные окружения в Vercel:
-  - `GITHUB_TOKEN` — токен с правами `repo` (запись в репозиторий).
-  - `BLOB_READ_WRITE_TOKEN` — добавляется автоматически при подключении Vercel Blob Storage.
+- Статика (`index.html`, старое `media/`) отдаётся как есть.
+- Бэкенд — **Node.js serverless-функции** в `api/*.js` (SDK `@vercel/blob`), общая логика в `lib/store.js`:
+  - `GET /api/data` — отдаёт актуальный `data.json` из **Vercel Blob** (если его там ещё нет — 404, и фронтенд берёт исходный `data.json` из репозитория как «семя»).
+  - `POST /api/update-data` — сохраняет весь `data.json` в Blob.
+  - `POST /api/upload-photo` / `upload-doc` — заливают файл в Blob, дописывают полный URL в `data.json` (тоже в Blob).
+- Загрузка файлов идёт **сырым телом** запроса (без multipart): метаданные — в query (`personId`, `filename`, `title`).
+- **Единственная нужная переменная окружения — `BLOB_READ_WRITE_TOKEN`**, и она добавляется автоматически при подключении Storage → Blob в панели Vercel. **`GITHUB_TOKEN` больше НЕ нужен.**
+- Данные `data.json` на проде живут в Blob, а не в git (история правок в git не ведётся — это осознанный компромисс ради простоты, см. [BACKLOG.md](BACKLOG.md)).
 
 ## Совместимость путей к медиа
 
