@@ -3806,7 +3806,7 @@ function selectPerson(id) {
   html += '<div class="panel-photos">';
   html += '<div class="panel-avatar">';
   if (p.photoIds && p.photoIds.length > 0) {
-    html += `<img src="./media/${p.photoIds[0]}.jpg" onerror="this.onerror=null;this.src='./media/${p.photoIds[0]}.png';this.onerror=function(){this.parentElement.innerHTML='<div class=\\'initials\\'>${getInitials(p)}</div>';}">`;
+    html += `<img src="${photoUrl(p.photoIds[0])}" onerror="this.onerror=null;this.src='${photoUrl(p.photoIds[0]).replace(/\.jpg$/,'.png')}';this.onerror=function(){this.parentElement.innerHTML='<div class=\\'initials\\'>${getInitials(p)}</div>';}">`;
   } else {
     html += `<div class="initials">${getInitials(p)}</div>`;
   }
@@ -3816,7 +3816,7 @@ function selectPerson(id) {
   html += '<div class="panel-gallery">';
   if (p.photoIds && p.photoIds.length > 0) {
     for (let i = 0; i < p.photoIds.length; i++) {
-      html += `<img src="./media/${p.photoIds[i]}.jpg" onerror="this.onerror=null;this.src='./media/${p.photoIds[i]}.png';this.onerror=function(){this.style.display=\\'none\\';}" onclick="showLightbox('./media/${p.photoIds[i]}.jpg')">`;
+      html += `<img src="${photoUrl(p.photoIds[i])}" onerror="this.style.display='none'" onclick="showLightbox('${photoUrl(p.photoIds[i])}')">`;
     }
   }
   html += `<button class="upload-photo-btn" title="Добавить фото" onclick="triggerUpload('${id}')">＋</button>`;
@@ -3895,8 +3895,8 @@ function selectPerson(id) {
       <div class="panel-docs">`;
     for (const doc of p.documents) {
       html += `
-        <div class="panel-doc-thumb" onclick="showLightbox('./media/docs/${doc.file}')">
-          <img src="./media/docs/${doc.file}" loading="lazy">
+        <div class="panel-doc-thumb" onclick="showLightbox('${docUrl(doc.file)}')">
+          <img src="${docUrl(doc.file)}" loading="lazy">
           <div class="doc-label">${doc.title}</div>
         </div>`;
     }
@@ -4019,6 +4019,20 @@ function cleanPlace(place) {
   return place.split(',').map(s => s.trim()).filter(Boolean).join(', ');
 }
 
+// Returns a usable URL for a photo reference — supports both legacy numeric IDs and full URLs (Vercel Blob)
+function photoUrl(ref) {
+  if (!ref) return '';
+  if (typeof ref === 'string' && (ref.startsWith('http') || ref.startsWith('/'))) return ref;
+  return `./media/${ref}.jpg`;
+}
+
+// Returns a usable URL for a document reference — supports both filenames and full URLs
+function docUrl(ref) {
+  if (!ref) return '';
+  if (typeof ref === 'string' && (ref.startsWith('http') || ref.startsWith('/'))) return ref;
+  return `./media/docs/${ref}`;
+}
+
 function getInitials(p) {
   let initials = '';
   if (p.givn) initials += p.givn[0];
@@ -4028,7 +4042,7 @@ function getInitials(p) {
 
 function photoHTML(p, isNode) {
   if (p.photoIds && p.photoIds.length > 0) {
-    return `<img src="./media/${p.photoIds[0]}.jpg" onerror="this.onerror=null;this.src='./media/${p.photoIds[0]}.png';this.onerror=function(){this.parentElement.innerHTML='<div class=\\'initials\\'>${getInitials(p)}</div>';}">`;
+    return `<img src="${photoUrl(p.photoIds[0])}" onerror="this.onerror=null;this.style.display='none';this.parentElement.innerHTML='<div class=\\'initials\\'>${getInitials(p)}</div>'">`;
   }
   return `<div class="initials">${getInitials(p)}</div>`;
 }
@@ -4161,7 +4175,8 @@ function renderMediaGallery() {
 
     const cb = Date.now();
     for (const p of withPhotos) {
-      const cover = `./media/${p.photoIds[0]}.jpg?v=${cb}`;
+      const _pu = photoUrl(p.photoIds[0]);
+      const cover = _pu.startsWith('http') ? _pu : `${_pu}?v=${cb}`;
       const initials = getInitials(p) || '?';
       const count = p.photoIds.length;
       html += `<div class="gallery-person-card" id="mc-${p.id}" onclick="openMediaPerson('${p.id}')">
@@ -4204,8 +4219,8 @@ function openMediaPerson(id) {
   card.classList.add('active');
 
   const photosHtml = p.photoIds.map(photoId =>
-    `<div class="gallery-photo-thumb" onclick="showLightbox('./media/${photoId}.jpg')">
-      <img src="./media/${photoId}.jpg" onerror="this.onerror=null;this.src='./media/${photoId}.png';" loading="lazy">
+    `<div class="gallery-photo-thumb" onclick="showLightbox('${photoUrl(photoId)}')">
+      <img src="${photoUrl(photoId)}" onerror="this.style.display='none'" loading="lazy">
     </div>`
   ).join('');
 
@@ -4248,7 +4263,7 @@ function renderDocsGallery() {
   </div>`;
 
   const cards = people.map(p => {
-    const cover = `./media/docs/${p.documents[0].file}`;
+    const cover = docUrl(p.documents[0].file);
     const initials = getInitials(p) || '?';
     const count = p.documents.length;
     return `<div class="gallery-person-card" id="dc-${p.id}" onclick="openDocsPerson('${p.id}')">
@@ -4300,8 +4315,8 @@ function openDocsPerson(id) {
   ).join('');
 
   const firstPages = docsGroups[0].docs.map(doc =>
-    `<div class="docs-page-thumb" onclick="showLightbox('./media/docs/${doc.file}')">
-      <img src="./media/docs/${doc.file}" loading="lazy">
+    `<div class="docs-page-thumb" onclick="showLightbox('${docUrl(doc.file)}')">
+      <img src="${docUrl(doc.file)}" loading="lazy">
       <div class="docs-page-label">${doc.title}</div>
     </div>`
   ).join('');
@@ -4323,8 +4338,8 @@ function switchDocsTab(idx) {
   const group = docsGroups[idx];
   if (!group) return;
   document.getElementById('docs-expanded-pages').innerHTML = group.docs.map(doc =>
-    `<div class="docs-page-thumb" onclick="showLightbox('./media/docs/${doc.file}')">
-      <img src="./media/docs/${doc.file}" loading="lazy">
+    `<div class="docs-page-thumb" onclick="showLightbox('${docUrl(doc.file)}')">
+      <img src="${docUrl(doc.file)}" loading="lazy">
       <div class="docs-page-label">${doc.title}</div>
     </div>`
   ).join('');
@@ -4414,13 +4429,14 @@ async function dumUpload() {
       formData.append('title', title);
       const res = await fetch(`/api/upload-doc?personId=${personId}`, { method: 'POST', body: formData });
       if (!res.ok) throw new Error(await res.text());
-      const { filename } = await res.json();
+      const j = await res.json();
+      const fileRef = j.url || j.filename;
 
       // Update local DATA
       const p = DATA.individuals[personId];
       if (p) {
         if (!p.documents) p.documents = [];
-        p.documents.push({ file: filename, title });
+        p.documents.push({ file: fileRef, title });
       }
       log.innerHTML += `<div class="ok">✓ ${file.name}</div>`;
     } catch (e) {
@@ -4754,9 +4770,9 @@ function buildBookPhotosHtml(ids) {
         <div style="font-size:9px;color:#a08060;text-align:center;max-width:80px;">${name}</div>
       </div>`;
     }
-    const cb = Date.now();
+    const _pu2 = photoUrl(photoId);
     return `<div style="display:flex;flex-direction:column;align-items:center;gap:4px;">
-      <img src="./media/${photoId}.jpg?v=${cb}" style="width:80px;height:80px;object-fit:cover;border-radius:6px;border:2px solid #d4c4a0;" onerror="this.style.display='none'">
+      <img src="${_pu2.startsWith('http') ? _pu2 : _pu2 + '?v=' + Date.now()}" style="width:80px;height:80px;object-fit:cover;border-radius:6px;border:2px solid #d4c4a0;" onerror="this.style.display='none'">
       <div style="font-size:9px;color:#a08060;text-align:center;max-width:80px;">${name}</div>
     </div>`;
   }).join('');
@@ -5130,7 +5146,7 @@ function renderGeography() {
       const bgColor = isAlive ? '#e8f5ec' : '#f0f0f0';
       const photoId = p && p.photoIds && p.photoIds[0];
       const photoHTML = photoId
-        ? `<img src="./media/${photoId}.jpg" onerror="this.onerror=null;this.src='./media/${photoId}.png';" style="width:36px;height:36px;border-radius:50%;object-fit:cover;border:2px solid ${borderColor};">`
+        ? `<img src="${photoUrl(photoId)}" onerror="this.style.display='none'" style="width:36px;height:36px;border-radius:50%;object-fit:cover;border:2px solid ${borderColor};">`
         : `<div style="width:36px;height:36px;border-radius:50%;background:${bgColor};border:2px solid ${borderColor};display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;color:${borderColor};">${getInitials(p)}</div>`;
 
       popupHTML += `
@@ -5239,11 +5255,35 @@ function triggerUpload(personId) {
   input.click();
 }
 
+async function compressImage(file, maxPx = 1600, quality = 0.82) {
+  return new Promise(resolve => {
+    const img = new Image();
+    const blobUrl = URL.createObjectURL(file);
+    img.onload = () => {
+      const scale = Math.min(1, maxPx / Math.max(img.width, img.height));
+      const w = Math.round(img.width * scale);
+      const h = Math.round(img.height * scale);
+      const canvas = document.createElement('canvas');
+      canvas.width = w; canvas.height = h;
+      canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+      canvas.toBlob(blob => {
+        URL.revokeObjectURL(blobUrl);
+        resolve(new File([blob], file.name.replace(/\.[^.]+$/, '.jpg'), { type: 'image/jpeg' }));
+      }, 'image/jpeg', quality);
+    };
+    img.onerror = () => { URL.revokeObjectURL(blobUrl); resolve(file); };
+    img.src = blobUrl;
+  });
+}
+
 async function uploadPhotos(personId, files) {
   showToast('Загружаю...' , false, 0);
   let uploaded = 0;
-  for (const file of files) {
+  for (let file of files) {
     try {
+      if (file.type.startsWith('image/') && file.size > 800000) {
+        file = await compressImage(file);
+      }
       const formData = new FormData();
       formData.append('photo', file);
       formData.append('filename', file.name);
@@ -5252,13 +5292,14 @@ async function uploadPhotos(personId, files) {
         body: formData,
       });
       if (!res.ok) throw new Error(await res.text());
-      const { photoId } = await res.json();
+      const j = await res.json();
+      const photoRef = j.url || j.photoId;
 
       // Update local DATA
       const p = DATA.individuals[personId];
       if (p) {
         if (!p.photoIds) p.photoIds = [];
-        p.photoIds.push(photoId);
+        p.photoIds.push(photoRef);
       }
       uploaded++;
     } catch (e) {
