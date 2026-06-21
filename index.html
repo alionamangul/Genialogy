@@ -1958,20 +1958,26 @@ const V_GAP = 80;
 const DEFAULT_ROOT_ID = '43938060';
 
 async function init() {
-  try {
-    // Сначала пробуем актуальные данные из Blob (/api/data),
-    // при отсутствии/ошибке — исходный data.json из репозитория.
-    let loaded = false;
+  // Пробуем актуальные данные (/api/data), затем исходный data.json.
+  // Если сервер перекинул на страницу входа — сессия истекла, идём логиниться.
+  let ok = false;
+  for (const u of ['/api/data', './data.json?ts=' + Date.now()]) {
     try {
-      const r = await fetch('/api/data', { cache: 'no-store' });
-      if (r.ok) { DATA = await r.json(); loaded = true; }
-    } catch(_) { /* нет бэкенда — пойдём на статику */ }
-    if (!loaded) {
-      const resp = await fetch('./data.json?ts=' + Date.now());
-      DATA = await resp.json();
-    }
-  } catch(e) {
-    document.body.innerHTML = '<div style="padding:40px;color:#c9a84c;font-size:18px;">Ошибка загрузки data.json. Запустите через локальный сервер: npx serve .</div>';
+      const r = await fetch(u, { cache: 'no-store' });
+      if (r.redirected && /\/login/.test(r.url)) { window.location.href = '/login'; return; }
+      if (!r.ok) continue;
+      DATA = await r.json();   // бросит исключение, если это не JSON (напр. HTML входа) → пробуем дальше
+      ok = true;
+      break;
+    } catch(_) { /* пробуем следующий источник */ }
+  }
+  if (!ok) {
+    document.body.innerHTML = '<div style="padding:40px;color:#6b4f2a;font-family:-apple-system,system-ui,sans-serif;font-size:17px;text-align:center;line-height:1.6;">'
+      + 'Не удалось загрузить данные.<br><br>'
+      + '<a href="/login" style="color:#8a6d3b;font-weight:600;">Войти заново</a>'
+      + ' &nbsp;·&nbsp; '
+      + '<a href="javascript:location.reload()" style="color:#8a6d3b;font-weight:600;">Обновить</a>'
+      + '</div>';
     return;
   }
   setupSearch();

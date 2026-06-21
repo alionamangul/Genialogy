@@ -10,8 +10,13 @@ import time
 import shutil
 import hashlib
 import base64
+import threading
 import urllib.parse
 from urllib.parse import unquote
+
+# Блокировка на запись data.json — чтобы параллельные запросы (многопоточный сервер)
+# не повредили файл при одновременной записи.
+_data_lock = threading.Lock()
 
 APP_DIR   = os.environ.get('TREE_DIR', os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR  = APP_DIR
@@ -25,17 +30,13 @@ PASSWORD = os.environ.get('TREE_PASSWORD')
 
 
 def save_data(data):
-    """Write data.json to SERVE_DIR (always), and attempt BASE_DIR (may be blocked by sandbox)."""
+    """Атомарная запись data.json (через временный файл + rename), под блокировкой."""
     os.makedirs(SERVE_DIR, exist_ok=True)
-    with open(TMP_DATA_JSON, 'w', encoding='utf-8') as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-    # Best-effort write to permanent storage
-    try:
-        base_json = os.path.join(BASE_DIR, 'data.json')
-        with open(base_json, 'w', encoding='utf-8') as f:
+    with _data_lock:
+        tmp = TMP_DATA_JSON + '.tmp'
+        with open(tmp, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
-    except Exception:
-        pass
+        os.replace(tmp, TMP_DATA_JSON)  # атомарная замена — читатели не увидят полупустой файл
 
 
 def load_data():
@@ -304,6 +305,9 @@ if __name__ == '__main__':
                 pass
 
     port = 8081
-    server = http.server.HTTPServer(('', port), Handler)
+    # Многопоточный сервер: запросы (статика, картинки, API) обрабатываются параллельно,
+    # один медленный/большой запрос не блокирует остальные.
+    server = http.server.ThreadingHTTPServer(('', port), Handler)
+    server.daemon_threads = True
     print(f'Serving at http://localhost:{port}')
     server.serve_forever()
