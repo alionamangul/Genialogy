@@ -96,3 +96,23 @@
 - [FUNCTIONALITY.md](FUNCTIONALITY.md) — что сайт умеет (функциональное описание).
 - [ARCHITECTURE.md](ARCHITECTURE.md) — как он устроен (схемы).
 - [BACKLOG.md](BACKLOG.md) — задачи на будущее.
+
+---
+
+## 🚀 Деплой (production) — обновлено 21.06.2026
+
+**Живёт на сервере:** https://tree.alena.com.ru
+Сейчас **без пароля** (как было на Vercel — открыт). Можно закрыть паролем по аналогии с галереей.
+
+- **Переехал с Vercel на свой сервер.** Больше не используется Vercel Blob — медиа лежат на диске сервера.
+- **Сервер:** Timeweb VPS, Ubuntu 24.04, IP `147.45.212.70`. Каталог `/opt/apps/family-tree`.
+- **Запуск:** systemd-сервис `family-tree`, порт 8081, `python3 serve.py` (только стандартная библиотека), автозапуск + рестарт.
+- **Reverse-proxy:** Caddy (`tree.alena.com.ru` → localhost:8081), HTTPS Let's Encrypt автоматически.
+- **serve.py под сервер:** сохранён как `serve_server.py` в репозитории. Отличие от локального —
+  пути берутся из переменной `TREE_DIR` (на сервере `/opt/apps/family-tree`) вместо хардкода Mac/`/tmp`.
+  Самодостаточный: отдаёт `index.html`, `data.json`, `media/` и обрабатывает API:
+  `/api/update-data`, `/api/upload-photo`, `/api/upload-doc` (фронт грузит данные через `/api/data`
+  с фоллбэком на `./data.json`).
+- **Данные (персистентны на сервере):** `data.json` + `media/` (фото/документы, ~456 МБ).
+- **Перевыкладка:** `rsync index.html data.json serve_server.py(→serve.py) media/` на сервер;
+  `systemctl restart family-tree`.
