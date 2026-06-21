@@ -224,18 +224,18 @@ __MSG__
             filename = photo_id + ext
             save_media_file(os.path.join('media', filename), file_bytes)
 
-            # Локально храним «голый» id — photoUrl() сам достроит ./media/<id>.jpg.
-            # (на проде функция возвращает полный Blob URL, который photoUrl пропускает как есть)
+            # Храним имя файла С РАСШИРЕНИЕМ (напр. 123.png) — photoUrl() достроит ./media/123.png.
+            # Иначе для не-jpg (png/webp) ссылка ломалась: голый id всегда трактовался как .jpg.
             if person_id:
                 data = load_data()
                 p = data.get('individuals', {}).get(person_id)
                 if p is not None:
                     if 'photoIds' not in p or p['photoIds'] is None:
                         p['photoIds'] = []
-                    p['photoIds'].append(photo_id)
+                    p['photoIds'].append(filename)
                     save_data(data)
 
-            self._json_response({'photoId': photo_id, 'filename': filename})
+            self._json_response({'photoId': filename, 'filename': filename})
 
         except Exception as e:
             self._json_response({'error': str(e)}, 500)

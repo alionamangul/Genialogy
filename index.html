@@ -4031,8 +4031,12 @@ function cleanPlace(place) {
 // Returns a usable URL for a photo reference — supports both legacy numeric IDs and full URLs (Vercel Blob)
 function photoUrl(ref) {
   if (!ref) return '';
-  if (typeof ref === 'string' && (ref.startsWith('http') || ref.startsWith('/'))) return ref;
-  return `./media/${ref}.jpg`;
+  ref = String(ref);
+  if (ref.startsWith('http') || ref.startsWith('/') || ref.startsWith('./') || ref.startsWith('blob:')) return ref;
+  // Уже с расширением картинки → это имя файла в media/ (новые загрузки)
+  if (/\.(jpe?g|png|webp|gif)$/i.test(ref)) return './media/' + ref;
+  // «Голый» id старого формата → исторически это .jpg
+  return './media/' + ref + '.jpg';
 }
 
 // Returns a usable URL for a document reference — supports both filenames and full URLs
