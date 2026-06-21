@@ -70,6 +70,18 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def log_message(self, fmt, *args):
         pass  # suppress access log noise
 
+    def end_headers(self):
+        # Не кэшировать HTML/данные/API — иначе веб-клип на iPhone («на экран Домой»)
+        # залипает на старой версии и не подхватывает обновления.
+        # Медиа (фото/документы) неизменны по имени — их кешируем надолго ради трафика.
+        path = self.path.split('?', 1)[0]
+        if path.startswith('/media/'):
+            self.send_header('Cache-Control', 'public, max-age=31536000, immutable')
+        else:
+            self.send_header('Cache-Control', 'no-store, no-cache, must-revalidate')
+            self.send_header('Pragma', 'no-cache')
+        super().end_headers()
+
     def do_OPTIONS(self):
         self.send_response(200)
         self._cors()
