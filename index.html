@@ -342,6 +342,25 @@ body {
   transition: border-color 0.2s;
 }
 .panel-gallery img:hover { border-color: var(--gold); }
+.media-thumb-wrap {
+  position: relative; display: inline-block; line-height: 0;
+  width: 56px; height: 56px; border-radius: 6px;
+  background: var(--border); /* подложка: даже если фото не загрузилось, видно рамку и кнопку удаления */
+}
+.media-del {
+  position: absolute; top: 3px; right: 3px;
+  width: 22px; height: 22px; border-radius: 50%;
+  border: none; background: rgba(150,40,30,0.88); color: #fff;
+  font-size: 12px; line-height: 22px; text-align: center; padding: 0;
+  cursor: pointer; z-index: 4; opacity: 0; transition: opacity 0.15s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.35);
+}
+.media-thumb-wrap:hover .media-del,
+.gallery-photo-thumb:hover .media-del,
+.panel-doc-thumb:hover .media-del { opacity: 1; }
+.media-del:hover { background: #a8362a; }
+/* На тач-устройствах нет наведения — показываем всегда */
+@media (hover: none) { .media-del { opacity: 0.92; } }
 .upload-photo-btn {
   width: 56px; height: 56px;
   border-radius: 6px;
@@ -807,6 +826,7 @@ textarea.panel-field { resize: vertical; min-height: 60px; }
 .gallery-expanded-photos::-webkit-scrollbar { height: 5px; }
 .gallery-expanded-photos::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
 .gallery-photo-thumb {
+  position: relative;
   flex-shrink: 0;
   width: 140px; height: 140px;
   border-radius: 8px;
@@ -938,6 +958,7 @@ textarea.panel-field { resize: vertical; min-height: 60px; }
   margin-top: 6px;
 }
 .panel-doc-thumb {
+  position: relative;
   border-radius: 4px;
   overflow: hidden;
   cursor: pointer;
@@ -3831,7 +3852,12 @@ function selectPerson(id) {
   html += '<div class="panel-gallery">';
   if (p.photoIds && p.photoIds.length > 0) {
     for (let i = 0; i < p.photoIds.length; i++) {
-      html += `<img src="${photoUrl(p.photoIds[i])}" onerror="this.style.display='none'" onclick="showLightbox('${photoUrl(p.photoIds[i])}')">`;
+      const ref = p.photoIds[i];
+      const refEsc = String(ref).replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+      html += `<div class="media-thumb-wrap">`
+        + `<img src="${photoUrl(ref)}" onerror="this.style.display='none'" onclick="showLightbox('${photoUrl(ref)}')">`
+        + `<button class="media-del" title="Удалить фото" onclick="event.stopPropagation();deletePhoto('${id}','${refEsc}')">✕</button>`
+        + `</div>`;
     }
   }
   html += `<button class="upload-photo-btn" title="Добавить фото" onclick="triggerUpload('${id}')">＋</button>`;
@@ -3909,10 +3935,12 @@ function selectPerson(id) {
       <div class="panel-section-title">Документы</div>
       <div class="panel-docs">`;
     for (const doc of p.documents) {
+      const fileEsc = String(doc.file).replace(/\\/g, '\\\\').replace(/'/g, "\\'");
       html += `
         <div class="panel-doc-thumb" onclick="showLightbox('${docUrl(doc.file)}')">
           <img src="${docUrl(doc.file)}" loading="lazy">
           <div class="doc-label">${doc.title}</div>
+          <button class="media-del" title="Удалить документ" onclick="event.stopPropagation();deleteDoc('${id}','${fileEsc}')">✕</button>
         </div>`;
     }
     html += `</div></div>`;
@@ -4237,11 +4265,13 @@ function openMediaPerson(id) {
   document.querySelectorAll('#media-person-grid .gallery-person-card').forEach(c => c.classList.remove('active'));
   card.classList.add('active');
 
-  const photosHtml = p.photoIds.map(photoId =>
-    `<div class="gallery-photo-thumb" onclick="showLightbox('${photoUrl(photoId)}')">
+  const photosHtml = p.photoIds.map(photoId => {
+    const refEsc = String(photoId).replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+    return `<div class="gallery-photo-thumb" onclick="showLightbox('${photoUrl(photoId)}')">
       <img src="${photoUrl(photoId)}" onerror="this.style.display='none'" loading="lazy">
-    </div>`
-  ).join('');
+      <button class="media-del" title="Удалить фото" onclick="event.stopPropagation();deletePhoto('${id}','${refEsc}')">✕</button>
+    </div>`;
+  }).join('');
 
   const content = `
     <div class="gallery-expanded-header">
@@ -5256,6 +5286,56 @@ function renderGeography() {
 }
 
 // ============ PHOTO UPLOAD ============
+async function deletePhoto(personId, ref) {
+  if (!confirm('Удалить это фото? Восстановить будет нельзя.')) return;
+  try {
+    const res = await fetch(`/api/delete-photo?personId=${encodeURIComponent(personId)}&ref=${encodeURIComponent(ref)}`, { method: 'POST' });
+    if (!res.ok) throw new Error(await res.text());
+    const p = DATA.individuals[personId];
+    if (p && Array.isArray(p.photoIds)) {
+      const i = p.photoIds.indexOf(ref);
+      if (i !== -1) p.photoIds.splice(i, 1);
+    }
+    showToast('Фото удалено');
+    refreshAfterMediaChange(personId);
+  } catch (e) {
+    showToast('Ошибка: ' + e.message, true);
+  }
+}
+
+async function deleteDoc(personId, file) {
+  if (!confirm('Удалить этот документ? Восстановить будет нельзя.')) return;
+  try {
+    const res = await fetch(`/api/delete-doc?personId=${encodeURIComponent(personId)}&ref=${encodeURIComponent(file)}`, { method: 'POST' });
+    if (!res.ok) throw new Error(await res.text());
+    const p = DATA.individuals[personId];
+    if (p && Array.isArray(p.documents)) {
+      const i = p.documents.findIndex(d => d.file === file);
+      if (i !== -1) p.documents.splice(i, 1);
+    }
+    showToast('Документ удалён');
+    refreshAfterMediaChange(personId);
+    const dgrid = document.getElementById('docs-person-grid');
+    if (dgrid && dgrid.children.length > 0) { dgrid.innerHTML = ''; renderDocsGallery(); }
+  } catch (e) {
+    showToast('Ошибка: ' + e.message, true);
+  }
+}
+
+// Перерисовать карточку и галерею «Медиа» после изменения фото/документов
+function refreshAfterMediaChange(personId) {
+  if (selectedId === personId) selectPerson(personId);
+  const grid = document.getElementById('media-person-grid');
+  if (grid && grid.children.length > 0) {
+    grid.innerHTML = '';
+    renderMediaGallery();
+    if (mediaActiveId === personId) {
+      mediaActiveId = null;
+      setTimeout(() => openMediaPerson(personId), 50);
+    }
+  }
+}
+
 function triggerUpload(personId) {
   const input = document.createElement('input');
   input.type = 'file';

@@ -176,6 +176,10 @@ __MSG__
             self._handle_upload()
         elif self.path.startswith('/api/upload-doc'):
             self._handle_upload_doc()
+        elif self.path.startswith('/api/delete-photo'):
+            self._handle_delete_photo()
+        elif self.path.startswith('/api/delete-doc'):
+            self._handle_delete_doc()
         elif self.path == '/api/update-data':
             self._handle_update_data()
         else:
@@ -294,6 +298,90 @@ __MSG__
             body = self.rfile.read(length)
             data = json.loads(body.decode('utf-8'))
             save_data(data)
+            self._json_response({'ok': True})
+        except Exception as e:
+            self._json_response({'error': str(e)}, 500)
+
+    # ── удаление фото/документов ──
+    def _media_path_for_photo(self, ref):
+        """Локальный путь к файлу фото по ссылке из photoIds (None для внешних URL)."""
+        ref = str(ref)
+        if ref.startswith('http') or ref.startswith('/'):
+            return None
+        low = ref.lower()
+        has_ext = any(low.endswith(e) for e in ('.jpg', '.jpeg', '.png', '.webp', '.gif'))
+        name = os.path.basename(ref if has_ext else ref + '.jpg')  # basename — защита от обхода пути
+        return os.path.join(SERVE_DIR, 'media', name)
+
+    def _media_path_for_doc(self, ref):
+        ref = str(ref)
+        if ref.startswith('http') or ref.startswith('/'):
+            return None
+        return os.path.join(SERVE_DIR, 'media', 'docs', os.path.basename(ref))
+
+    def _ref_used_elsewhere(self, data, ref, kind):
+        """Ссылается ли на этот файл кто-то ещё (чтобы не удалить общий файл)."""
+        for ind in data.get('individuals', {}).values():
+            if kind == 'photo':
+                if ref in (ind.get('photoIds') or []):
+                    return True
+            else:
+                if any((d or {}).get('file') == ref for d in (ind.get('documents') or [])):
+                    return True
+        return False
+
+    def _handle_delete_photo(self):
+        try:
+            params = self._parse_qs()
+            person_id = params.get('personId', '')
+            ref = params.get('ref', '')
+            if not person_id or not ref:
+                self._json_response({'error': 'personId и ref обязательны'}, 400)
+                return
+            data = load_data()
+            p = data.get('individuals', {}).get(person_id)
+            if p is None:
+                self._json_response({'error': 'нет такого человека'}, 404)
+                return
+            ids = p.get('photoIds') or []
+            if ref in ids:
+                ids.remove(ref)
+                p['photoIds'] = ids
+                save_data(data)
+            # физически удаляем файл, только если локальный и больше нигде не используется
+            path = self._media_path_for_photo(ref)
+            if path and os.path.exists(path) and not self._ref_used_elsewhere(data, ref, 'photo'):
+                try:
+                    os.remove(path)
+                except Exception:
+                    pass
+            self._json_response({'ok': True})
+        except Exception as e:
+            self._json_response({'error': str(e)}, 500)
+
+    def _handle_delete_doc(self):
+        try:
+            params = self._parse_qs()
+            person_id = params.get('personId', '')
+            ref = params.get('ref', '')
+            if not person_id or not ref:
+                self._json_response({'error': 'personId и ref обязательны'}, 400)
+                return
+            data = load_data()
+            p = data.get('individuals', {}).get(person_id)
+            if p is None:
+                self._json_response({'error': 'нет такого человека'}, 404)
+                return
+            docs = p.get('documents') or []
+            p['documents'] = [d for d in docs if (d or {}).get('file') != ref]
+            if len(p['documents']) != len(docs):
+                save_data(data)
+            path = self._media_path_for_doc(ref)
+            if path and os.path.exists(path) and not self._ref_used_elsewhere(data, ref, 'doc'):
+                try:
+                    os.remove(path)
+                except Exception:
+                    pass
             self._json_response({'ok': True})
         except Exception as e:
             self._json_response({'error': str(e)}, 500)
