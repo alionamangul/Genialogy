@@ -8,6 +8,9 @@ import json
 import os
 import time
 import shutil
+import hashlib
+import base64
+import urllib.parse
 from urllib.parse import unquote
 
 APP_DIR   = os.environ.get('TREE_DIR', os.path.dirname(os.path.abspath(__file__)))
@@ -15,6 +18,10 @@ BASE_DIR  = APP_DIR
 SERVE_DIR = APP_DIR
 TMP_DATA_JSON = os.path.join(SERVE_DIR, 'data.json')
 TMP_MEDIA_DIR = os.path.join(SERVE_DIR, 'media')
+
+# Защита паролем включается, только если задана переменная окружения TREE_PASSWORD.
+# Без неё (локальный запуск) сайт открывается без пароля.
+PASSWORD = os.environ.get('TREE_PASSWORD')
 
 
 def save_data(data):
@@ -72,7 +79,86 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
         self.send_header('Access-Control-Allow-Headers', 'Content-Type')
 
+    # ── вход по cookie (пароль вводится один раз и запоминается на устройстве) ──
+    def _token(self):
+        return hashlib.sha256((str(PASSWORD) + 'family-tree-v1').encode()).hexdigest()
+
+    def _authed(self):
+        if not PASSWORD:
+            return True
+        cookie = self.headers.get('Cookie', '')
+        for part in cookie.split(';'):
+            if '=' in part:
+                k, v = part.strip().split('=', 1)
+                if k == 'tree_auth' and v == self._token():
+                    return True
+        # запасной вариант — HTTP Basic (для прямых запросов/curl)
+        hdr = self.headers.get('Authorization', '')
+        if hdr.startswith('Basic '):
+            try:
+                dec = base64.b64decode(hdr[6:]).decode('utf-8', 'ignore')
+                if ':' in dec and dec.split(':', 1)[1] == PASSWORD:
+                    return True
+            except Exception:
+                pass
+        return False
+
+    def _login_page(self, error=False):
+        msg = '<p class="err">Неверный пароль</p>' if error else ''
+        html = """<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Вход — Родословная</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,system-ui,'Segoe UI',sans-serif;
+background:#efe7d6;color:#4a3f2e;min-height:100dvh;
+display:flex;align-items:center;justify-content:center;padding:24px}
+.box{width:100%;max-width:320px;text-align:center}
+.leaf{font-size:2.4rem;margin-bottom:10px}
+h1{font-size:1.4rem;margin-bottom:6px;color:#6b4f2a}
+p.sub{color:#9a8a6a;font-size:.9rem;margin-bottom:24px}
+input{width:100%;padding:14px 16px;font-size:1rem;border:1px solid #cbb78f;
+border-radius:12px;margin-bottom:12px;background:#fbf7ee}
+button{width:100%;padding:14px;font-size:1rem;font-weight:600;border:none;
+border-radius:12px;background:#8a6d3b;color:#fff;cursor:pointer}
+button:hover{background:#765d31}
+.err{color:#a8462f;font-size:.85rem;margin-bottom:12px}
+</style></head><body><div class="box">
+<div class="leaf">\U0001F333</div>
+<h1>Родословная</h1><p class="sub">Семейный архив</p>
+__MSG__
+<form method="POST" action="/login">
+<input type="password" name="password" placeholder="Пароль" autofocus autocomplete="current-password">
+<button type="submit">Войти</button>
+</form></div></body></html>""".replace('__MSG__', msg)
+        data = html.encode('utf-8')
+        self.send_response(200)
+        self.send_header('Content-Type', 'text/html; charset=utf-8')
+        self.send_header('Content-Length', str(len(data)))
+        self.end_headers()
+        self.wfile.write(data)
+
+    def do_GET(self):
+        path = urllib.parse.urlparse(self.path).path
+        if PASSWORD and path == '/login':
+            self._login_page()
+            return
+        if not self._authed():
+            self.send_response(302)
+            self.send_header('Location', '/login')
+            self.send_header('Content-Length', '0')
+            self.end_headers()
+            return
+        super().do_GET()
+
     def do_POST(self):
+        path = urllib.parse.urlparse(self.path).path
+        if PASSWORD and path == '/login':
+            self._handle_login()
+            return
+        if not self._authed():
+            self.send_error(401)
+            return
         if self.path.startswith('/api/upload-photo'):
             self._handle_upload()
         elif self.path.startswith('/api/upload-doc'):
@@ -81,6 +167,21 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self._handle_update_data()
         else:
             self.send_error(404)
+
+    def _handle_login(self):
+        length = int(self.headers.get('Content-Length', 0) or 0)
+        body = self.rfile.read(length).decode('utf-8', 'ignore') if length else ''
+        pw = urllib.parse.parse_qs(body).get('password', [''])[0]
+        if pw == PASSWORD:
+            self.send_response(303)
+            self.send_header('Location', '/')
+            self.send_header('Set-Cookie',
+                'tree_auth=' + self._token() +
+                '; Max-Age=31536000; Path=/; HttpOnly; SameSite=Lax; Secure')
+            self.send_header('Content-Length', '0')
+            self.end_headers()
+        else:
+            self._login_page(error=True)
 
     def _json_response(self, data, status=200):
         body = json.dumps(data, ensure_ascii=False).encode('utf-8')

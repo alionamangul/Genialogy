@@ -102,7 +102,12 @@
 ## 🚀 Деплой (production) — обновлено 21.06.2026
 
 **Живёт на сервере:** https://tree.alena.com.ru
-Сейчас **без пароля** (как было на Vercel — открыт). Можно закрыть паролем по аналогии с галереей.
+**Закрыт паролем** (cookie-гейт). Пароль задаётся переменной окружения `TREE_PASSWORD`
+в systemd-юните (`/etc/systemd/system/family-tree.service`), сейчас = `family`.
+Вход один раз на устройство: кука `tree_auth` живёт год (`Max-Age=31536000`, HttpOnly, Secure).
+Закрыты ВСЕ маршруты — `index.html`, `data.json`, `media/`, `/api/*`; открыты только `/login` и POST `/login`.
+Сменить пароль: поправить `Environment=TREE_PASSWORD=` в юните → `systemctl daemon-reload && systemctl restart family-tree`
+(старые куки после смены станут недействительны — потребуется повторный вход).
 
 - **Переехал с Vercel на свой сервер.** Больше не используется Vercel Blob — медиа лежат на диске сервера.
 - **Сервер:** Timeweb VPS, Ubuntu 24.04, IP `147.45.212.70`. Каталог `/opt/apps/family-tree`.
