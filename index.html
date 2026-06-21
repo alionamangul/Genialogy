@@ -950,6 +950,22 @@ textarea.panel-field { resize: vertical; min-height: 60px; }
 .doc-upload-log .ok { color: #4a9; }
 .doc-upload-log .err { color: #c66; }
 
+/* Добавление родственника */
+.ap-rel-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.ap-rel {
+  flex: 1 1 calc(50% - 6px); padding: 9px 6px; border-radius: 8px;
+  border: 1px solid var(--border); background: var(--bg); color: var(--text);
+  font-size: 13px; cursor: pointer; transition: all 0.15s;
+}
+.ap-rel:hover { border-color: var(--gold); }
+.ap-rel.active { background: var(--gold); color: #fff; border-color: var(--gold); font-weight: 600; }
+.ap-add-btn {
+  width: 100%; padding: 11px; border-radius: 8px; cursor: pointer;
+  border: 1px dashed var(--gold); background: transparent; color: var(--gold);
+  font-size: 14px; font-weight: 600; transition: background 0.15s;
+}
+.ap-add-btn:hover { background: rgba(180,150,80,0.12); }
+
 /* Documents in side panel */
 .panel-docs {
   display: grid;
@@ -1645,6 +1661,53 @@ textarea.panel-field { resize: vertical; min-height: 60px; }
       <button class="doc-btn-close" onclick="closeDocUploadModal()">Закрыть</button>
       <button class="doc-btn-add" onclick="dumAddMore()">+ Ещё документ</button>
       <button class="doc-btn-save" onclick="dumUpload()">Загрузить</button>
+    </div>
+  </div>
+</div>
+
+<div class="doc-upload-modal" id="add-person-modal" onclick="if(event.target===this)closeAddRelative()">
+  <div class="doc-upload-box">
+    <h3 id="ap-title">Добавить родственника</h3>
+    <div class="doc-upload-field">
+      <label>Кем приходится</label>
+      <div class="ap-rel-row" id="ap-rel-row">
+        <button type="button" class="ap-rel" data-rel="child" onclick="setApRelation('child')">Ребёнок</button>
+        <button type="button" class="ap-rel" data-rel="spouse" onclick="setApRelation('spouse')">Супруг(а)</button>
+        <button type="button" class="ap-rel" data-rel="parent" onclick="setApRelation('parent')">Родитель</button>
+        <button type="button" class="ap-rel" data-rel="sibling" onclick="setApRelation('sibling')">Брат / сестра</button>
+      </div>
+    </div>
+    <div class="doc-upload-field" id="ap-coparent-field" style="display:none;">
+      <label id="ap-coparent-label">Второй родитель</label>
+      <select id="ap-coparent"></select>
+    </div>
+    <div class="doc-upload-field">
+      <label>Фамилия</label>
+      <input type="text" id="ap-surn" placeholder="Фамилия">
+    </div>
+    <div class="doc-upload-field">
+      <label>Имя</label>
+      <input type="text" id="ap-givn" placeholder="Имя">
+    </div>
+    <div class="doc-upload-field">
+      <label>Отчество (необязательно)</label>
+      <input type="text" id="ap-secg" placeholder="Отчество">
+    </div>
+    <div class="doc-upload-field">
+      <label>Пол</label>
+      <select id="ap-sex">
+        <option value="M">Мужской</option>
+        <option value="F">Женский</option>
+      </select>
+    </div>
+    <div class="doc-upload-field">
+      <label>Год рождения (необязательно)</label>
+      <input type="text" id="ap-birth" placeholder="например 1925">
+    </div>
+    <div class="doc-upload-log" id="ap-log"></div>
+    <div class="doc-upload-actions">
+      <button class="doc-btn-close" onclick="closeAddRelative()">Отмена</button>
+      <button class="doc-btn-save" onclick="submitAddRelative()">Добавить</button>
     </div>
   </div>
 </div>
@@ -3990,6 +4053,11 @@ function selectPerson(id) {
     </div>`;
   }
 
+  // Добавить родственника
+  html += `<div class="panel-section" style="border-top:1px solid var(--border);padding-top:14px;margin-top:6px;">
+    <button class="ap-add-btn" onclick="openAddRelative('${id}')">＋ Добавить родственника</button>
+  </div>`;
+
   document.getElementById('panel-content').innerHTML = html;
   document.getElementById('side-panel').classList.add('open');
 }
@@ -5286,6 +5354,166 @@ function renderGeography() {
 }
 
 // ============ PHOTO UPLOAD ============
+// ============ ДОБАВЛЕНИЕ РОДСТВЕННИКА ============
+let _apAnchor = null;
+let _apRelation = 'child';
+
+function openAddRelative(anchorId) {
+  _apAnchor = anchorId;
+  const a = DATA.individuals[anchorId];
+  if (!a) return;
+  document.getElementById('ap-title').textContent = 'Родственник к: ' + formatName(a);
+  document.getElementById('ap-surn').value = '';
+  document.getElementById('ap-givn').value = '';
+  document.getElementById('ap-secg').value = '';
+  document.getElementById('ap-sex').value = 'M';
+  document.getElementById('ap-birth').value = '';
+  document.getElementById('ap-log').textContent = '';
+  setApRelation('child');
+  document.getElementById('add-person-modal').classList.add('open');
+}
+
+function closeAddRelative() {
+  document.getElementById('add-person-modal').classList.remove('open');
+}
+
+function setApRelation(rel) {
+  _apRelation = rel;
+  document.querySelectorAll('#ap-rel-row .ap-rel').forEach(b => b.classList.toggle('active', b.dataset.rel === rel));
+  // Удобство: для ребёнка/брата подставим фамилию якоря, если поле ещё пустое
+  const surnEl = document.getElementById('ap-surn');
+  const a = DATA.individuals[_apAnchor];
+  if (a && !surnEl.value && (rel === 'child' || rel === 'sibling')) surnEl.value = a.surn || '';
+  _updateCoparentField();
+}
+
+// Если у якоря несколько браков — даём выбрать, к какой паре добавляется ребёнок
+function _updateCoparentField() {
+  const field = document.getElementById('ap-coparent-field');
+  const sel = document.getElementById('ap-coparent');
+  const a = DATA.individuals[_apAnchor];
+  sel.innerHTML = '';
+  field.style.display = 'none';
+  if (_apRelation !== 'child' || !a || !a.fams || a.fams.length === 0) return;
+  // Семьи, где a — родитель; сортируем по числу детей (главная пара — по умолчанию сверху)
+  const opts = a.fams.map(fid => {
+    const f = DATA.families[fid];
+    if (!f) return null;
+    const spId = (f.husb === a.id) ? f.wife : f.husb;
+    const spName = (spId && DATA.individuals[spId]) ? formatName(DATA.individuals[spId]) : 'без второго родителя';
+    return { fid, spName, kids: (f.chil || []).length };
+  }).filter(Boolean).sort((x, y) => y.kids - x.kids);
+  sel.innerHTML = opts.map(o => `<option value="${o.fid}">${o.spName}${o.kids ? ` (детей: ${o.kids})` : ''}</option>`).join('')
+    + `<option value="__new__">— другая / новая пара —</option>`;
+  // Поле показываем только если выбор реально есть (несколько браков)
+  if (a.fams.length > 1) field.style.display = '';
+}
+
+function _genId(obj) {
+  let id;
+  do { id = String(Math.floor(10000000 + Math.random() * 89999999)); } while (obj[id]);
+  return id;
+}
+
+function _newFamily() {
+  const fid = _genId(DATA.families);
+  DATA.families[fid] = { husb: '', wife: '', chil: [] };
+  return fid;
+}
+
+function _wireRelative(a, np, rel) {
+  a.fams = a.fams || []; a.famc = a.famc || [];
+  np.fams = np.fams || []; np.famc = np.famc || [];
+  if (rel === 'child') {
+    // выбранная пара из формы (если у якоря несколько браков); иначе первая/новая
+    const sel = document.getElementById('ap-coparent');
+    let fid = (sel && sel.value && sel.value !== '__new__' && DATA.families[sel.value]) ? sel.value : null;
+    if (!fid && (!sel || sel.value !== '__new__')) fid = a.fams[0] || null;
+    if (!fid) {
+      fid = _newFamily();
+      if (a.sex === 'F') DATA.families[fid].wife = a.id; else DATA.families[fid].husb = a.id;
+      a.fams.push(fid);
+    }
+    DATA.families[fid].chil.push(np.id);
+    np.famc = [fid];
+  } else if (rel === 'spouse') {
+    const fid = _newFamily();
+    const f = DATA.families[fid];
+    if (a.sex === 'F') { f.wife = a.id; f.husb = np.id; } else { f.husb = a.id; f.wife = np.id; }
+    a.fams.push(fid); np.fams = [fid];
+  } else if (rel === 'parent') {
+    let fid = a.famc[0];
+    if (!fid) { fid = _newFamily(); DATA.families[fid].chil.push(a.id); a.famc = [fid]; }
+    const f = DATA.families[fid];
+    const slot = (np.sex === 'F') ? 'wife' : 'husb';
+    if (f[slot] && f[slot] !== np.id) {
+      const other = slot === 'wife' ? 'husb' : 'wife';
+      if (f[other]) throw new Error('У этого человека уже указаны оба родителя');
+      f[other] = np.id;
+    } else {
+      f[slot] = np.id;
+    }
+    np.fams.push(fid);
+  } else if (rel === 'sibling') {
+    let fid = a.famc[0];
+    if (!fid) { fid = _newFamily(); DATA.families[fid].chil.push(a.id); a.famc = [fid]; }
+    DATA.families[fid].chil.push(np.id);
+    np.famc = [fid];
+  } else {
+    throw new Error('Неизвестный тип связи');
+  }
+}
+
+async function persistData() {
+  const res = await fetch('/api/update-data', {
+    method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(DATA)
+  });
+  if (!res.ok) throw new Error(await res.text());
+}
+
+async function submitAddRelative() {
+  const a = DATA.individuals[_apAnchor];
+  if (!a) return;
+  const surn = document.getElementById('ap-surn').value.trim();
+  const givn = document.getElementById('ap-givn').value.trim();
+  const secg = document.getElementById('ap-secg').value.trim();
+  const sex = document.getElementById('ap-sex').value;
+  const birth = document.getElementById('ap-birth').value.trim();
+  const log = document.getElementById('ap-log');
+  if (!givn && !surn) { log.textContent = 'Укажите хотя бы имя или фамилию'; return; }
+
+  const nid = _genId(DATA.individuals);
+  const np = {
+    id: nid, givn, surn, secg, sex,
+    birthDate: birth, birthPlace: '', deathDate: '', deathPlace: '',
+    occupation: '', residence: '', notes: [], fams: [], famc: [], photoIds: [], documents: []
+  };
+  DATA.individuals[nid] = np;
+
+  try {
+    _wireRelative(a, np, _apRelation);
+  } catch (e) {
+    delete DATA.individuals[nid];
+    log.textContent = 'Ошибка: ' + e.message;
+    return;
+  }
+
+  try {
+    await persistData();
+  } catch (e) {
+    // откат при неудачном сохранении
+    delete DATA.individuals[nid];
+    log.textContent = 'Не удалось сохранить: ' + e.message;
+    return;
+  }
+
+  closeAddRelative();
+  showToast('Добавлен(а): ' + formatName(np));
+  renderTree();                       // пересобрать позиции узлов
+  if (currentView === 'list') renderList();
+  selectPerson(nid);                  // открыть карточку нового человека (в дереве также сфокусирует)
+}
+
 async function deletePhoto(personId, ref) {
   if (!confirm('Удалить это фото? Восстановить будет нельзя.')) return;
   try {
